@@ -1,0 +1,15 @@
+{
+    "name": "com.zcc.utils",
+    "version": "0.0.1",
+    "displayName": "ZCC Utils",
+    "description": "a utils package",
+    "unity": "2019.4",
+   "keywords": [
+      "utils"
+    ],
+    "author": {
+      "name": "ZCC",
+      "email": "872285171@qq.com",
+      "url": "https://gitee.com/week233/zcc_utils_unity"
+    }
+  }
