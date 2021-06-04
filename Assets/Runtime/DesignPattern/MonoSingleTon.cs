@@ -5,7 +5,7 @@ namespace ZCCUtils.DesignPattern
     /// <summary>
     /// 单例模板类
     /// </summary>
-    public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
+    public class MonoSingleTon<T> : MonoBehaviour where T : MonoBehaviour
     {
         private static T instance;
         public static T Instance
