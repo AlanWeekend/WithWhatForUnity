@@ -21,24 +21,11 @@ namespace ZCCUtils.DesignPattern
                     {
                         // 如果没有找到， 则新建一个
                         GameObject obj = new GameObject(typeof(T).Name);
-                        // 对象不可见，不会被保存
-                        obj.hideFlags = HideFlags.HideAndDontSave;
                         // 强制转换为 T 
                         instance = obj.AddComponent(typeof(T)) as T;
                     }
                 }
                 return instance;
-            }
-        }
-
-        protected virtual void Awake()
-        {
-            if (instance == null)
-                instance = this as T;
-            else
-            {
-                GameObject.Destroy(instance);
-                instance = this as T;
             }
         }
 
