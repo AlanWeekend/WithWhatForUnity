@@ -29,6 +29,17 @@ namespace ZCCUtils.DesignPattern
             }
         }
 
+        protected virtual void Awake()
+        {
+            if (instance == null)
+                instance = this as T;
+            else
+            {
+                GameObject.Destroy(instance);
+                instance = this as T;
+            }
+        }
+
         private void OnDestroy()
         {
             instance = null;
