@@ -15,28 +15,31 @@ namespace ZCCUtils.DesignPattern
             {
                 if (instance == null)
                 {
-                    // 如果不存在实例, 则查找所有这个类型的对象
-                    instance = FindObjectOfType(typeof(T)) as T;
+                    instance = FindObjectOfType<T>();
+                    if (FindObjectsOfType<T>().Length > 1)
+                    {
+                        Debug.LogWarning($"More than 1: {typeof(T).Name}");
+                        return instance;
+                    }
                     if (instance == null)
                     {
-                        // 如果没有找到， 则新建一个
-                        GameObject obj = new GameObject(typeof(T).Name);
-                        // 强制转换为 T 
-                        instance = obj.AddComponent(typeof(T)) as T;
+                        var instanceName = typeof(T).Name;
+                        Debug.LogFormat("Instance Name: {0}", instanceName);
+                        var instanceObj = GameObject.Find(instanceName);
+                        if (!instanceObj)
+                            instanceObj = new GameObject(instanceName);
+                        instance = instanceObj.AddComponent<T>();
+                        DontDestroyOnLoad(instanceObj); //保证实例例不不会被释放
+
+                        Debug.LogFormat("Add New Singleton {0} in Game!",
+                        instanceName);
+                    }
+                    else
+                    {
+                        Debug.LogFormat("Already exist: {0}", instance.name);
                     }
                 }
                 return instance;
-            }
-        }
-
-        protected virtual void Awake()
-        {
-            if (instance == null)
-                instance = this as T;
-            else
-            {
-                GameObject.Destroy(instance);
-                instance = this as T;
             }
         }
 
