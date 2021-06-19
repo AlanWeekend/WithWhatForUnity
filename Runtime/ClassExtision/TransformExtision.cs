@@ -19,5 +19,17 @@ namespace ZCCUtils.ClassExtision
             }
             return childs;
         }
+
+        /// <summary>
+        /// 设置所有子物体的active，不包含孙物体
+        /// </summary>
+        /// <param name="transform"></param>
+        public static void SetChildsActive(this Transform transform, bool value)
+        {
+            for (int i = 0; i < transform.childCount; i++)
+            {
+                transform.GetChild(i).gameObject.SetActive(value);
+            }
+        }
     }
 }
