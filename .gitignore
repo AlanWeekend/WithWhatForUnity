@@ -50,3 +50,5 @@ crashlytics-build.properties
 /Assets/Test.cs
 /Assets/Test.cs.meta
 Resources
+/Assets/Resources.meta
+/Assets/Scenes.meta
