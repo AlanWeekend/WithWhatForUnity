@@ -16,5 +16,19 @@ namespace ZCCUtils.ClassExtision
             RectTransformUtility.ScreenPointToLocalPointInRectangle(rectTransform, Input.mousePosition, camera, out pos);
             return new Vector3(pos.x, pos.y, 0);
         }
+
+        /// <summary>
+        /// 世界坐标转ui坐标
+        /// </summary>
+        /// <param name="canvas">画布</param>
+        /// <param name="worldPos">世界坐标</param>
+        /// <returns></returns>
+        public static Vector2 WorldToCanvasPoint(Canvas canvas, Vector3 worldPos)
+        {
+            Vector2 pos;
+            RectTransformUtility.ScreenPointToLocalPointInRectangle(canvas.transform as RectTransform,
+                Camera.main.WorldToScreenPoint(worldPos), canvas.worldCamera, out pos);
+            return pos;
+        }
     }
 }
