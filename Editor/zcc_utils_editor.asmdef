@@ -1,3 +1,17 @@
-﻿{
-	"name": "zcc"
+{
+    "name": "zcc",
+    "references": [
+        "GUID:418d77782be8ead41b36cdceeb14e9aa"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }
