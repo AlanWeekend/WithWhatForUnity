@@ -46,7 +46,7 @@ namespace ZCCUtils.Editor
                 var mats = new Material[length];
                 for (int i = 0; i < length; i++)
                 {
-                    mats[i] = meshRender.sharedMaterials[i];
+                    mats[i] = this.targetMat;
                 }
                 meshRender.sharedMaterials = mats;
             }
