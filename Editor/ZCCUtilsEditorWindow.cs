@@ -1,5 +1,4 @@
-﻿#if UNITY_EDITOR
-using UnityEditor;
+﻿using UnityEditor;
 using UnityEngine;
 
 namespace ZCCUtils.Editor
@@ -69,4 +68,3 @@ namespace ZCCUtils.Editor
         #endregion
     }
 }
-#endif
