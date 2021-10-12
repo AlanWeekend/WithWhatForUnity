@@ -48,5 +48,28 @@ namespace ZCCUtils.ClassExtision
             Vector3 mousePos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, pos.z) + offset;
             transform.position = camera.ScreenToWorldPoint(mousePos);
         }
+
+        /// <summary>
+        /// 根据名称查找子物体（递归）
+        /// </summary>
+        /// <param name="root"></param>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        public static Transform FindChildByName(this Transform root, string name)
+        {
+            Transform child = root.Find(name);
+            if (child != null)
+                return child;
+
+            Transform go = null;
+            for (int i = 0; i < root.childCount; i++)
+            {
+                child = root.GetChild(i);
+                go = FindChildByName(child, name);
+                if (go != null)
+                    return go;
+            }
+            return null;
+        }
     }
 }
