@@ -5,9 +5,9 @@ using ZCCUtils.Infrastructure.Serializer;
 
 namespace ZCCUtils.Repository
 {
-    public class FileSystemRepository<T> : IRepository<T> where T:class,new()
+    public class FileSystemRepository<T> : IRepository<T> where T : class, new()
     {
-        public string DataDirectory { get; private set; }
+        public string DataDirectory { get; set; }
         protected ISerializer Serializer { get; set; }
 
         public FileSystemRepository() { }
