@@ -54,6 +54,10 @@ namespace ZCCUtils.Repository
                     return Serializer.Deserialize<List<T>>(serializeObject);
                 }
             }
+            catch (DirectoryNotFoundException e)
+            {
+                return null;
+            }
             catch (Exception e)
             {
                 throw new Exception(e.ToString());
