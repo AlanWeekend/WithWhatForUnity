@@ -16,10 +16,6 @@ namespace ZCCUtils.Repository
         {
             DataDirectory = Path.Combine(pathToDataDirectory);
             Serializer = serializer != null ? serializer : SerializerJson.Instance;
-            if (!Directory.Exists(DataDirectory))
-            {
-                Directory.CreateDirectory(DataDirectory);
-            }
         }
 
         public virtual void Delete(T instance)
@@ -30,7 +26,17 @@ namespace ZCCUtils.Repository
         {
             try
             {
+                // 创建文件夹
+                if (!Directory.Exists(DataDirectory))
+                {
+                    Directory.CreateDirectory(DataDirectory);
+                }
+                // 创建文件
                 string fileName = Path.Combine(DataDirectory, typeof(T).Name);
+                if (!File.Exists(fileName))
+                {
+                        File.Create(fileName);
+                }
                 string serializeObject = Serializer.Serialize(instance, true);
                 using (StreamWriter stream = new StreamWriter(fileName))
                 {
@@ -48,6 +54,7 @@ namespace ZCCUtils.Repository
             try
             {
                 string fileName = Path.Combine(DataDirectory, typeof(T).Name);
+
                 using (StreamReader stream = new StreamReader(fileName))
                 {
                     var serializeObject = stream.ReadToEnd();
