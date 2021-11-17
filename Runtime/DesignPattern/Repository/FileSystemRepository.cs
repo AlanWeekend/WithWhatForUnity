@@ -56,7 +56,7 @@ namespace ZCCUtils.Repository
             }
             catch (DirectoryNotFoundException e)
             {
-                return null;
+                return new List<T>();
             }
             catch (Exception e)
             {
