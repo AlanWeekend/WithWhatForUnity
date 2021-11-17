@@ -35,13 +35,11 @@ namespace ZCCUtils.Repository
                 string fileName = Path.Combine(DataDirectory, typeof(T).Name);
                 if (!File.Exists(fileName))
                 {
-                        File.Create(fileName);
+                    FileStream fs = File.Create(fileName);
+                    fs.Close();
                 }
                 string serializeObject = Serializer.Serialize(instance, true);
-                using (StreamWriter stream = new StreamWriter(fileName))
-                {
-                    stream.Write(serializeObject);
-                }
+                File.WriteAllText(fileName, serializeObject);
             }
             catch (Exception e)
             {
@@ -58,10 +56,14 @@ namespace ZCCUtils.Repository
                 using (StreamReader stream = new StreamReader(fileName))
                 {
                     var serializeObject = stream.ReadToEnd();
-                    return Serializer.Deserialize<List<T>>(serializeObject);
+                    return new List<T>() { Serializer.Deserialize<T>(serializeObject) };
                 }
             }
             catch (DirectoryNotFoundException e)
+            {
+                return new List<T>();
+            }
+            catch (FileNotFoundException e)
             {
                 return new List<T>();
             }
