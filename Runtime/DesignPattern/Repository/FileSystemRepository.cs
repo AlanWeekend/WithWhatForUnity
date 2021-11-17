@@ -22,30 +22,14 @@ namespace ZCCUtils.Repository
 
         public virtual void Delete(T instance)
         {
-            throw new NotImplementedException();
         }
 
         public virtual void Insert(T instance)
         {
-            throw new NotImplementedException();
-        }
-
-        public virtual IEnumerable<T> Select(Func<T, bool> func)
-        {
-            throw new NotImplementedException();
-        }
-
-        public virtual void Update(T instance)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Write(T instance)
-        {
             try
             {
                 string fileName = Path.Combine(DataDirectory, typeof(T).Name);
-                string serializeObject = Serializer.Serialize<T>(instance, true);
+                string serializeObject = Serializer.Serialize(instance, true);
                 using (StreamWriter stream = new StreamWriter(fileName))
                 {
                     stream.Write(serializeObject);
@@ -55,6 +39,27 @@ namespace ZCCUtils.Repository
             {
                 throw new Exception(e.ToString());
             }
+        }
+
+        public virtual IEnumerable<T> Select(Func<T, bool> func)
+        {
+            try
+            {
+                string fileName = Path.Combine(DataDirectory, typeof(T).Name);
+                using (StreamReader stream = new StreamReader(fileName))
+                {
+                    var serializeObject = stream.ReadToEnd();
+                    return Serializer.Deserialize<List<T>>(serializeObject);
+                }
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.ToString());
+            }
+        }
+
+        public virtual void Update(T instance)
+        {
         }
     }
 }
