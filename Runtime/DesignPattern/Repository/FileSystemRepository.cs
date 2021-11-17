@@ -10,6 +10,8 @@ namespace ZCCUtils.Repository
         public string DataDirectory { get; private set; }
         protected ISerializer Serializer { get; set; }
 
+        public FileSystemRepository() { }
+
         public FileSystemRepository(string pathToDataDirectory, ISerializer serializer = null)
         {
             DataDirectory = Path.Combine(pathToDataDirectory);
