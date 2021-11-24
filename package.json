@@ -1,9 +1,10 @@
 {
   "name": "com.zcc.withwhat",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "displayName": "WithWhat",
   "description": "A utils package",
   "unity": "2019.4",
+  "documentationUrl": "https://yongshen.me/",
   "keywords": [
     "utils",
     "With What"
