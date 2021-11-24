@@ -1,6 +1,6 @@
 {
   "name": "com.zcc.withwhat",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "displayName": "WithWhat",
   "description": "A utils package",
   "unity": "2019.4",
@@ -14,6 +14,6 @@
     "url": "https://yongshen.me"
   },
   "dependencies": {
-    "com.unity.nuget.newtonsoft-json": "1.1.2"
+    "com.newtonsoft.json": "1.0.1"
   }
 }
