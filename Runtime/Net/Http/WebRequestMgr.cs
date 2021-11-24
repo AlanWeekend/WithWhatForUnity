@@ -24,7 +24,6 @@ namespace WithWhat.Net.Http
         /// Get请求
         /// </summary>
         /// <param name="url">请求地址,不包含域名</param>
-        /// <param name="loop">循环请求</param>
         /// <param name="resultFunc">请求完成后的回调,参数1:是否请求成功,参数2:成功时是json,失败时是错误提示</param>
         /// <returns></returns>
         public void StartGetRequest(string url, Action<bool, string> resultFunc, Dictionary<string, string> header = null)
