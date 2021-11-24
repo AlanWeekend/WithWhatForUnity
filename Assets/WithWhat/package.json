@@ -12,8 +12,5 @@
     "name": "ZCC",
     "email": "ccz411@outlook.com",
     "url": "https://yongshen.me"
-  },
-  "dependencies": {
-    "com.newtonsoft.json": "1.0.1"
   }
 }
