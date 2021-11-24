@@ -36,18 +36,18 @@ namespace WithWhat.DesignPattern
             }
         }
 
-        public object AcquireObject<TInstance>() where TInstance : class, new()
+        public TInstance AcquireObject<TInstance>() where TInstance : class, new()
         {
             var type = typeof(TInstance);
             if (CacheObjects.ContainsKey(type))
             {
-                return CacheObjects[type];
+                return CacheObjects[type] as TInstance;
             }
             lock (_lock)
             {
                 var instance = new TInstance();
                 CacheObjects.Add(type, instance);
-                return CacheObjects[type];
+                return CacheObjects[type] as TInstance;
             }
         }
 

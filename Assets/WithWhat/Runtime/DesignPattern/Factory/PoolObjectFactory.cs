@@ -98,11 +98,20 @@ namespace WithWhat.DesignPattern
             return GetObject(type);
         }
 
-        public object AcquireObject<TInstance>() where TInstance : class, new()
+        /// <summary>
+        /// 获取对象
+        /// </summary>
+        /// <typeparam name="TInstance">类型</typeparam>
+        /// <returns></returns>
+        public TInstance AcquireObject<TInstance>() where TInstance : class, new()
         {
-            return AcquireObject(typeof(TInstance));
+            return AcquireObject(typeof(TInstance)) as TInstance;
         }
 
+        /// <summary>
+        /// 返还对象
+        /// </summary>
+        /// <param name="obj"></param>
         public void ReleaseObject(object obj)
         {
             if (_pool.Count > _max)

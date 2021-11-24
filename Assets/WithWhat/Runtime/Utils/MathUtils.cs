@@ -71,7 +71,7 @@ namespace WithWhat.Utils
         /// <param name="controlPoint1">控制点1</param>
         /// <param name="controlPoint2">控制点2</param>
         /// <param name="segmentNum">采样数</param>
-        /// <returns>二次贝塞尔曲线上的所有点，点个数取决于采样率</returns>
+        /// <returns>三次贝塞尔曲线上的所有点，点个数取决于采样率</returns>
         public static List<Vector3> Bezier_3(Vector3 startPoint, Vector3 endPoint, Vector3 controlPoint1, Vector3 controlPoint2, int segmentNum = 10)
         {
             var points = new List<Vector3>();

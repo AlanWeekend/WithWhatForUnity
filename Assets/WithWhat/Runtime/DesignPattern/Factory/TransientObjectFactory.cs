@@ -9,7 +9,7 @@ namespace WithWhat.DesignPattern
             return Activator.CreateInstance(type, false);
         }
 
-        public object AcquireObject<TInstance>() where TInstance : class, new()
+        public TInstance AcquireObject<TInstance>() where TInstance : class, new()
         {
             return new TInstance();
         }
