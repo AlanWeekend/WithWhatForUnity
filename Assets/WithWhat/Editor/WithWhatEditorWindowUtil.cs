@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace WithWhat.Editor
 {
-    public class ZCCUtilsEditorWindowUtil : MonoBehaviour
+    public class WithWhatEditorWindowUtil : MonoBehaviour
     {
         /// <summary>
         /// 绘制一条内容
@@ -17,13 +17,13 @@ namespace WithWhat.Editor
             style01.alignment = TextAnchor.MiddleLeft;
             style01.wordWrap = false;
             style01.fontStyle = FontStyle.Bold;
-            style01.fontSize = ZCCUtilsEditorWindow.FONTSIZE;
+            style01.fontSize = WithWhatEditorWindow.FONTSIZE;
 
             //说明样式
             GUIStyle style02 = new GUIStyle("label");
             style02.wordWrap = true;
             style02.richText = true;
-            style02.fontSize = ZCCUtilsEditorWindow.FONTSIZE - 4;
+            style02.fontSize = WithWhatEditorWindow.FONTSIZE - 4;
 
             EditorGUILayout.BeginVertical(new GUIStyle("Box"));
             EditorGUILayout.TextArea(str, style01);
