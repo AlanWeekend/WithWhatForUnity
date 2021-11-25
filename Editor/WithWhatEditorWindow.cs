@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace WithWhat.Editor
 {
-    public class ZCCUtilsEditorWindow : EditorWindow
+    public class WithWhatEditorWindow : EditorWindow
     {
         #region 数据成员
         private string[] tabNames = new string[] { "批量替换材质球" };
@@ -17,7 +17,7 @@ namespace WithWhat.Editor
         [MenuItem("ZCCUtils/Tools")]
         private static void ShowWindow()
         {
-            var window = GetWindow<ZCCUtilsEditorWindow>();
+            var window = GetWindow<WithWhatEditorWindow>();
             window.titleContent = new GUIContent("ZCCUtils");
             window.Show();
         }

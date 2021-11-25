@@ -11,8 +11,8 @@ namespace WithWhat.Editor
 
         public void DrawGUI()
         {
-            ZCCUtilsEditorWindowUtil.DrawTitle("批量替换目标游戏对象的所有材质");
-            ZCCUtilsEditorWindowUtil.DrawOneContent("说明", "将目标游戏对象及其所有子对象的材质统一替换为某一材质");
+            WithWhatEditorWindowUtil.DrawTitle("批量替换目标游戏对象的所有材质");
+            WithWhatEditorWindowUtil.DrawOneContent("说明", "将目标游戏对象及其所有子对象的材质统一替换为某一材质");
             EditorGUILayout.BeginHorizontal();
             EditorGUILayout.LabelField("目标游戏对象");
             targetGo = EditorGUILayout.ObjectField(targetGo, typeof(GameObject), true) as GameObject;
