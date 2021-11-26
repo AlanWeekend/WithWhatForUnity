@@ -11,6 +11,10 @@ namespace WithWhat.Utils
         /// <returns></returns>
         public static Vector3 StringToVector3(string position)
         {
+            if (string.IsNullOrEmpty(position))
+            {
+                return Vector3.zero;
+            }
             var pos = position.Replace("(", "").Replace(")", "").Split(',');
             return new Vector3(float.Parse(pos[0]), float.Parse(pos[1]), float.Parse(pos[2]));
         }
