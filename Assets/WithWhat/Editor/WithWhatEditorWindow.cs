@@ -6,19 +6,20 @@ namespace WithWhat.Editor
     public class WithWhatEditorWindow : EditorWindow
     {
         #region 数据成员
-        private string[] tabNames = new string[] { "批量替换材质球" };
+        private string[] tabNames = new string[] { "批量替换材质球", "场景编辑器" };
         private int selectedTabID;
         public static int FONTSIZE = 18;
 
-        private EditorWindowBatchReplaceMaterials batchReplaceMaterials;
+        private EditorWindowBatchReplaceMaterials _batchReplaceMaterials;
+        private EditorWindowSceneEditor _editorWindowSceneEditor;
         #endregion
 
         #region 编辑器入口
-        [MenuItem("ZCCUtils/Tools")]
+        [MenuItem("WithWhat/Tools")]
         private static void ShowWindow()
         {
             var window = GetWindow<WithWhatEditorWindow>();
-            window.titleContent = new GUIContent("ZCCUtils");
+            window.titleContent = new GUIContent("WithWhat");
             window.Show();
         }
         #endregion
@@ -26,7 +27,8 @@ namespace WithWhat.Editor
         #region OnEnable/OnDisable
         private void OnEnable()
         {
-            batchReplaceMaterials = ScriptableObject.CreateInstance<EditorWindowBatchReplaceMaterials>();
+            _batchReplaceMaterials = ScriptableObject.CreateInstance<EditorWindowBatchReplaceMaterials>();
+            _editorWindowSceneEditor = ScriptableObject.CreateInstance<EditorWindowSceneEditor>();
         }
         #endregion
 
@@ -59,7 +61,10 @@ namespace WithWhat.Editor
             switch (selectedTabID)
             {
                 case 0:
-                    batchReplaceMaterials.DrawGUI();
+                    _batchReplaceMaterials.DrawGUI();
+                    break;
+                case 1:
+                    _editorWindowSceneEditor.DrawGUI();
                     break;
                 default:
                     break;
