@@ -68,7 +68,7 @@ namespace WithWhat.Editor
                 EditorGUILayout.EndHorizontal();
                 // 水平布局
                 EditorGUILayout.BeginHorizontal();
-                if (GUILayout.Button("复制本地旋转"))
+                if (GUILayout.Button("复制本地缩放"))
                 {
                     TextEditor textEd = new TextEditor();
                     var str = $"{_transform.localScale.x},{_transform.localScale.y},{_transform.localScale.z}";
