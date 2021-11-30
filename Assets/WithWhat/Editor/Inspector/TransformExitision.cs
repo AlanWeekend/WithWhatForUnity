@@ -30,19 +30,13 @@ namespace WithWhat.Editor
                 EditorGUILayout.BeginHorizontal();
                 if (GUILayout.Button("复制世界坐标"))
                 {
-                    TextEditor textEd = new TextEditor();
                     var str = $"{_transform.position.x},{_transform.position.y},{_transform.position.z}";
-                    textEd.text = str;
-                    textEd.OnFocus();
-                    textEd.Copy();
+                    Utils.CopyToClipboard(str);
                 }
                 if (GUILayout.Button("复制本地坐标"))
                 {
-                    TextEditor textEd = new TextEditor();
                     var str = $"{_transform.localPosition.x},{_transform.localPosition.y},{_transform.localPosition.z}";
-                    textEd.text = str;
-                    textEd.OnFocus();
-                    textEd.Copy();
+                    Utils.CopyToClipboard(str);
                 }
                 EditorGUILayout.EndHorizontal();
                 // 水平布局
@@ -50,31 +44,22 @@ namespace WithWhat.Editor
                 if (GUILayout.Button("复制世界欧拉角"))
                 {
                     var eulerAngles = GetEulerAngles(_transform);
-                    TextEditor textEd = new TextEditor();
                     var str = $"{eulerAngles.x},{eulerAngles.y},{eulerAngles.z}";
-                    textEd.text = str;
-                    textEd.OnFocus();
-                    textEd.Copy();
+                    Utils.CopyToClipboard(str);
                 }
                 if (GUILayout.Button("复制本地欧拉角"))
                 {
                     var localEulerAngles = GetLocalEulerAngles(_transform);
-                    TextEditor textEd = new TextEditor();
                     var str = $"{localEulerAngles.x},{localEulerAngles.y},{localEulerAngles.z}";
-                    textEd.text = str;
-                    textEd.OnFocus();
-                    textEd.Copy();
+                    Utils.CopyToClipboard(str);
                 }
                 EditorGUILayout.EndHorizontal();
                 // 水平布局
                 EditorGUILayout.BeginHorizontal();
                 if (GUILayout.Button("复制本地缩放"))
                 {
-                    TextEditor textEd = new TextEditor();
                     var str = $"{_transform.localScale.x},{_transform.localScale.y},{_transform.localScale.z}";
-                    textEd.text = str;
-                    textEd.OnFocus();
-                    textEd.Copy();
+                    Utils.CopyToClipboard(str);
                 }
                 EditorGUILayout.EndHorizontal();
                 EditorGUILayout.EndVertical();
