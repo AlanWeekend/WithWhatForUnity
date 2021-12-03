@@ -1,8 +1,10 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
-namespace WithWhat.Editor
+namespace WithWhat.Utils
 {
     public class FileUtils
     {
@@ -39,6 +41,20 @@ namespace WithWhat.Editor
                     , path, ex.Message, ex.StackTrace));
                 return false;
             }
+        }
+
+        /// <summary>
+        /// 去除路径中的后缀
+        /// </summary>
+        /// <param name="path">路径</param>
+        /// <returns></returns>
+        public static string RemovePathExtision(string path)
+        {
+            if (path.LastIndexOf(".") != -1)
+            {
+                return path.Substring(0, path.LastIndexOf("."));
+            }
+            return path;
         }
     }
 }
