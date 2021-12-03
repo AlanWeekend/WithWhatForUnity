@@ -1,0 +1,368 @@
+fileFormatVersion: 2
+guid: 08baaabd2a8dd674293cfdd33bb1f272
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Box2668
+    100004: Box2678
+    100006: Box2679
+    100008: Box2684
+    100010: Box2687
+    100012: Box2688
+    100014: Box2689
+    100016: Box2694
+    100018: Box2695
+    100020: Box2696
+    100022: Box2697
+    100024: Box2698
+    100026: Box2854
+    100028: Box3139
+    100030: Box3221
+    100032: Box3222
+    100034: Box3225
+    100036: Box3226
+    100038: Cylinder4264
+    100040: Cylinder4267
+    100042: Cylinder4269
+    100044: Cylinder4270
+    100046: Cylinder4271
+    100048: Cylinder4272
+    100050: Cylinder4277
+    100052: Cylinder4320
+    100054: Cylinder4322
+    100056: Cylinder4325
+    100058: LAP5_WQ2126_STATE1
+    100060: Line452
+    100062: Line453
+    100064: Line457
+    100066: Line461
+    100068: Line462
+    100070: Line463
+    100072: Line464
+    100074: Line465
+    100076: Line466
+    100078: Plane617
+    100080: Torus010
+    100082: Tube007
+    100084: 6022.6022.LAP5_WQ2126_STATE1
+    100086: 6022.6022.LAP5_WQ2126_STATE1 1
+    100088: 6022.6022.LAP5_WQ2126_STATE2
+    100090: 6022.6022.LAP5_WQ2126_STATE3
+    100092: 6022.6022.LAP5_WQ2126_STATE4
+    400000: //RootNode
+    400002: Box2668
+    400004: Box2678
+    400006: Box2679
+    400008: Box2684
+    400010: Box2687
+    400012: Box2688
+    400014: Box2689
+    400016: Box2694
+    400018: Box2695
+    400020: Box2696
+    400022: Box2697
+    400024: Box2698
+    400026: Box2854
+    400028: Box3139
+    400030: Box3221
+    400032: Box3222
+    400034: Box3225
+    400036: Box3226
+    400038: Cylinder4264
+    400040: Cylinder4267
+    400042: Cylinder4269
+    400044: Cylinder4270
+    400046: Cylinder4271
+    400048: Cylinder4272
+    400050: Cylinder4277
+    400052: Cylinder4320
+    400054: Cylinder4322
+    400056: Cylinder4325
+    400058: LAP5_WQ2126_STATE1
+    400060: Line452
+    400062: Line453
+    400064: Line457
+    400066: Line461
+    400068: Line462
+    400070: Line463
+    400072: Line464
+    400074: Line465
+    400076: Line466
+    400078: Plane617
+    400080: Torus010
+    400082: Tube007
+    400084: 6022.6022.LAP5_WQ2126_STATE1
+    400086: 6022.6022.LAP5_WQ2126_STATE1 1
+    400088: 6022.6022.LAP5_WQ2126_STATE2
+    400090: 6022.6022.LAP5_WQ2126_STATE3
+    400092: 6022.6022.LAP5_WQ2126_STATE4
+    2100000: yin
+    2100002: green
+    2100004: "\u7535\u673A"
+    2100006: zangqing
+    2100008: "\u6A59"
+    2100010: hui
+    2100012: YIN
+    2100014: "\u6E05\u73BB\u7483"
+    2100016: No Name
+    2300000: Box2668
+    2300002: Box2678
+    2300004: Box2679
+    2300006: Box2684
+    2300008: Box2687
+    2300010: Box2688
+    2300012: Box2689
+    2300014: Box2694
+    2300016: Box2695
+    2300018: Box2696
+    2300020: Box2697
+    2300022: Box2698
+    2300024: Box2854
+    2300026: Box3221
+    2300028: Box3222
+    2300030: Box3225
+    2300032: Box3226
+    2300034: Cylinder4264
+    2300036: Cylinder4267
+    2300038: Cylinder4269
+    2300040: Cylinder4270
+    2300042: Cylinder4271
+    2300044: Cylinder4272
+    2300046: Cylinder4277
+    2300048: Cylinder4320
+    2300050: Cylinder4322
+    2300052: Cylinder4325
+    2300054: Line452
+    2300056: Line457
+    2300058: Line461
+    2300060: Line462
+    2300062: Line463
+    2300064: Line464
+    2300066: Line465
+    2300068: Line466
+    2300070: Plane617
+    2300072: Torus010
+    2300074: Tube007
+    2300076: 6022.6022.LAP5_WQ2126_STATE1 1
+    2300078: 6022.6022.LAP5_WQ2126_STATE2
+    2300080: 6022.6022.LAP5_WQ2126_STATE3
+    2300082: 6022.6022.LAP5_WQ2126_STATE4
+    3300000: Box2668
+    3300002: Box2678
+    3300004: Box2679
+    3300006: Box2684
+    3300008: Box2687
+    3300010: Box2688
+    3300012: Box2689
+    3300014: Box2694
+    3300016: Box2695
+    3300018: Box2696
+    3300020: Box2697
+    3300022: Box2698
+    3300024: Box2854
+    3300026: Box3221
+    3300028: Box3222
+    3300030: Box3225
+    3300032: Box3226
+    3300034: Cylinder4264
+    3300036: Cylinder4267
+    3300038: Cylinder4269
+    3300040: Cylinder4270
+    3300042: Cylinder4271
+    3300044: Cylinder4272
+    3300046: Cylinder4277
+    3300048: Cylinder4320
+    3300050: Cylinder4322
+    3300052: Cylinder4325
+    3300054: Line452
+    3300056: Line457
+    3300058: Line461
+    3300060: Line462
+    3300062: Line463
+    3300064: Line464
+    3300066: Line465
+    3300068: Line466
+    3300070: Plane617
+    3300072: Torus010
+    3300074: Tube007
+    3300076: 6022.6022.LAP5_WQ2126_STATE1 1
+    3300078: 6022.6022.LAP5_WQ2126_STATE2
+    3300080: 6022.6022.LAP5_WQ2126_STATE3
+    3300082: 6022.6022.LAP5_WQ2126_STATE4
+    4300000: Line461
+    4300002: Box2689
+    4300004: Line462
+    4300006: Cylinder4325
+    4300008: Cylinder4322
+    4300010: Box3226
+    4300012: Box3225
+    4300014: Cylinder4320
+    4300016: Box3222
+    4300018: Box3221
+    4300020: Cylinder4271
+    4300022: Cylinder4270
+    4300024: Cylinder4269
+    4300026: Torus010
+    4300028: Cylinder4267
+    4300030: Box2684
+    4300032: Box2668
+    4300034: Box2678
+    4300036: Box2679
+    4300038: Tube007
+    4300040: Box2687
+    4300042: Cylinder4264
+    4300044: Box2694
+    4300046: Line452
+    4300048: Box2695
+    4300050: Box2696
+    4300052: Cylinder4277
+    4300054: Line463
+    4300056: Line464
+    4300058: Box2854
+    4300060: Line465
+    4300062: Line466
+    4300064: Plane617
+    4300066: Box2697
+    4300068: Line457
+    4300070: Box2698
+    4300072: Box2688
+    4300074: Cylinder4272
+    4300076: 6022.6022.LAP5_WQ2126_STATE2
+    4300078: 6022.6022.LAP5_WQ2126_STATE4
+    4300080: 6022.6022.LAP5_WQ2126_STATE3
+    4300082: 6022.6022.LAP5_WQ2126_STATE1
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 8a006606f8a14c749b4fa98bd2e4646a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: YIN
+    second: {fileID: 2100000, guid: dcd1fb436485a5d4c9dc3674aad04ca2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: green
+    second: {fileID: 2100000, guid: 93f8eeb7ff8a65841843ef0386d350e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hui
+    second: {fileID: 2100000, guid: 7cb5836f57e37a54382d458ee4d85e93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: yin
+    second: {fileID: 2100000, guid: dcd1fb436485a5d4c9dc3674aad04ca2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zangqing
+    second: {fileID: 2100000, guid: 925406e4ca627554ebf37e0391b47338, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6A59"
+    second: {fileID: 2100000, guid: 59d8f9a59e8d2a2408b44aa7f17a443f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6E05\u73BB\u7483"
+    second: {fileID: 2100000, guid: 89c1a2b3101d95d4b8bc882d6929335d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u7535\u673A"
+    second: {fileID: 2100000, guid: 0b19ab6a4bb1eff42ae63ee91c292ad4, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 2
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.099999994
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 2
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

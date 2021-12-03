@@ -11,7 +11,7 @@ namespace WithWhat.Editor
         public static int FONTSIZE = 18;
 
         private EditorWindowBatchReplaceMaterials _batchReplaceMaterials;
-        private EditorWindowEditScene _editorWindowEditScene;
+        private EditorWindowExportScene _editorWindowEditScene;
         #endregion
 
         #region 编辑器入口
@@ -28,7 +28,7 @@ namespace WithWhat.Editor
         private void OnEnable()
         {
             _batchReplaceMaterials = ScriptableObject.CreateInstance<EditorWindowBatchReplaceMaterials>();
-            _editorWindowEditScene = ScriptableObject.CreateInstance<EditorWindowEditScene>();
+            _editorWindowEditScene = ScriptableObject.CreateInstance<EditorWindowExportScene>();
         }
         #endregion
 
