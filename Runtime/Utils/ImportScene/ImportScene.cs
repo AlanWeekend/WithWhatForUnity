@@ -314,6 +314,7 @@ namespace WithWhat.Utils.ImportScene
             foreach (var unloadPrefabPath in unLoadPrefabPaths)
             {
                 var prefab = Load?.Invoke(unloadPrefabPath) as GameObject;
+                if(_prefabCache==null) _prefabCache = new Dictionary<string, GameObject>();
                 _prefabCache.Add(prefab.name, prefab);
             }
         }
