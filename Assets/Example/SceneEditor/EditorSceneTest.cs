@@ -9,11 +9,11 @@ public class EditorSceneTest : MonoBehaviour
     private void Awake()
     {
         ImportScene.Instance.Init(LoadPrefab, AsyncLoadPrefab,Unload);
-        //importScene.LoadScene("Cubes");
-        ImportScene.Instance.AsyncLoadScene("Cubes", go =>
-        {
+        ImportScene.Instance.LoadScene("Cubes");
+        //ImportScene.Instance.AsyncLoadScene("Cubes", go =>
+        //{
 
-        });
+        //});
     }
 
     private void Unload(string prefabPath, GameObject Prefab)
