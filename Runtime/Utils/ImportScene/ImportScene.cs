@@ -404,11 +404,6 @@ namespace WithWhat.Utils.ImportScene
             prefabPaths = prefabPaths.Distinct().ToList();
             // 找出所有未加载的prefab
             var unloadPrefabPaths = prefabPaths.FindAll(p => !_prefabCache.ContainsKey(p));
-            // 去掉这些路径的后缀
-            for (int i = 0; i < unloadPrefabPaths.Count; i++)
-            {
-                unloadPrefabPaths[i] = FileUtils.RemovePathExtision(unloadPrefabPaths[i]);
-            }
             return unloadPrefabPaths;
         }
 
