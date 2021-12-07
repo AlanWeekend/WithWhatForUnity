@@ -52,7 +52,7 @@ namespace WithWhat.Utils
         {
             if (path.LastIndexOf(".") != -1)
             {
-                return path.Substring(0, path.LastIndexOf("."));
+                return path.Remove(path.LastIndexOf("."), path.Length - path.LastIndexOf("."));
             }
             return path;
         }
