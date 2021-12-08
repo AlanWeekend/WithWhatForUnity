@@ -69,7 +69,7 @@ namespace WithWhat.Utils.ImportScene
         /// </summary>
         /// <param name="SceneName"></param>
         /// <returns></returns>
-        public GameObject LoadScene(string SceneName)
+        public GameObject LoadScene(string SceneName, GameObject gameObject = null)
         {
             // 加载配置文件
             var config = LoadConfig(SceneName);
@@ -80,7 +80,7 @@ namespace WithWhat.Utils.ImportScene
             // 加载所需的Prefab
             LoadPrefab(prefabPaths);
             // 实例化Prefab
-            _currentScene = LoadScene(config);
+            _currentScene = LoadScene(config, gameObject);
             return _currentScene;
         }
 
@@ -89,7 +89,7 @@ namespace WithWhat.Utils.ImportScene
         /// </summary>
         /// <param name="SceneName"></param>
         /// <param name="complated"></param>
-        public void AsyncLoadScene(string SceneName,Action<GameObject> complated)
+        public void AsyncLoadScene(string SceneName,Action<GameObject> complated,GameObject gameObject = null)
         {
             // 加载配置文件
             var config = LoadConfig(SceneName);
@@ -100,7 +100,7 @@ namespace WithWhat.Utils.ImportScene
             // 异步所需的Prefab
             AsyncLoadPrefab(prefabPaths, prefabs =>
             {
-                _currentScene = LoadScene(config);
+                _currentScene = LoadScene(config, gameObject);
                 // 实例化Prefab
                 complated?.Invoke(_currentScene);
             });
@@ -117,6 +117,7 @@ namespace WithWhat.Utils.ImportScene
             if (_sceneCache.ContainsKey(SceneName))
             {
                 _currentScene = _sceneCache[SceneName];
+                LoadScene(SceneName, _currentScene);
             }
             else
             {
@@ -133,16 +134,20 @@ namespace WithWhat.Utils.ImportScene
         /// <param name="complate"></param>
         public void AsyncSwitchScene(string SceneName,Action<GameObject> complate)
         {
+            _currentScene.gameObject.SetActive(false);
             if (_sceneCache.ContainsKey(SceneName))
             {
-                _currentScene.gameObject.SetActive(false);
                 _currentScene = _sceneCache[SceneName];
                 _currentScene.gameObject.SetActive(true);
                 complate?.Invoke(_currentScene);
+                AsyncLoadScene(SceneName, scene =>
+                {
+                    _currentScene = scene;
+                    complate?.Invoke(_currentScene);
+                }, _currentScene);
             }
             else
             {
-                    _currentScene.gameObject.SetActive(false);
                 AsyncLoadScene(SceneName, scene =>
                 {
                     _currentScene = scene;
@@ -171,9 +176,9 @@ namespace WithWhat.Utils.ImportScene
         /// </summary>
         /// <param name="config"></param>
         /// <returns></returns>
-        private GameObject LoadScene(ExportSceneConfig config)
+        private GameObject LoadScene(ExportSceneConfig config,GameObject gameObject)
         {
-            var scene = Generate(config, null);
+            var scene = Generate(config, null, gameObject);
             if (_sceneCache == null) _sceneCache = new Dictionary<string, GameObject>();
             if (!_sceneCache.ContainsKey(config.GameObjectName)) _sceneCache.Add(config.GameObjectName, scene);
             return scene;
@@ -199,11 +204,12 @@ namespace WithWhat.Utils.ImportScene
         /// 根据场景配置文件生成场景内容
         /// </summary>
         /// <param name="exportSceneConfig"></param>
-        private GameObject Generate(ExportSceneConfig exportSceneConfig, Transform parent)
+        private GameObject Generate(ExportSceneConfig exportSceneConfig, Transform parent,GameObject gamobject=null)
         {
             if (exportSceneConfig == null) return null;
             if (!exportSceneConfig.ActiveSelf) return null;
-            var go = SpawnGameObject(exportSceneConfig);
+
+            var go = gamobject == null ? SpawnGameObject(exportSceneConfig) : gamobject;
 
             if (go != null)
             {
@@ -239,7 +245,20 @@ namespace WithWhat.Utils.ImportScene
 
             foreach (var child in exportSceneConfig.Childs)
             {
-                Generate(child, go.transform);
+                GameObject childGo = null;
+                if (gamobject != null)
+                {
+                    for (int i = 0; i < gamobject.transform.childCount; i++)
+                    {
+                        var cg = gamobject.transform.GetChild(i);
+                        if (cg.name.Equals(gamobject.name))
+                        {
+                            childGo = cg.gameObject;
+                            break;
+                        }
+                    }
+                }
+                Generate(child, go.transform, childGo);
             }
             return go;
         }
