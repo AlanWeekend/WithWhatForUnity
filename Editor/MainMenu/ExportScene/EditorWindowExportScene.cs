@@ -158,17 +158,17 @@ namespace WithWhat.Editor
                 // 本地坐标
                 Local = new ExportSceneConfigTransform()
             };
-            editorSceneConfig.Local.Position = transform.localPosition.ToString();
-            editorSceneConfig.Local.Rotation = transform.localEulerAngles.ToString();
-            editorSceneConfig.Local.Scale = transform.localScale.ToString();
+            editorSceneConfig.Local.Position = transform.localPosition.ToString("F5");
+            editorSceneConfig.Local.Rotation = transform.localEulerAngles.ToString("F5");
+            editorSceneConfig.Local.Scale = transform.localScale.ToString("F5");
             // 世界坐标
             if (transform == _targetGo.transform)
             {
                 editorSceneConfig.World = new ExportSceneConfigTransform
                 {
-                    Position = transform.position.ToString(),
-                    Rotation = transform.eulerAngles.ToString(),
-                    Scale = transform.localScale.ToString()
+                    Position = transform.position.ToString("F5"),
+                    Rotation = transform.eulerAngles.ToString("F5"),
+                    Scale = transform.localScale.ToString("F5")
                 };
             }
             // 触发器
@@ -239,8 +239,8 @@ namespace WithWhat.Editor
                     var boxCollider = collider as BoxCollider;
                     var boxtriggerData = new ExportSceneConfigTriggerBox()
                     {
-                        Center = boxCollider.center.ToString(),
-                        Size = boxCollider.size.ToString()
+                        Center = boxCollider.center.ToString("F5"),
+                        Size = boxCollider.size.ToString("F5")
                     };
                     editorSceneConfigTrigger.Data = JsonConvert.SerializeObject(boxtriggerData);
                     break;
@@ -248,7 +248,7 @@ namespace WithWhat.Editor
                     var capsuleCollider = collider as CapsuleCollider;
                     var capsuleTriggerData = new ExportSceneConfigTriggerCapsule()
                     {
-                        Center = capsuleCollider.center.ToString(),
+                        Center = capsuleCollider.center.ToString("F5"),
                         Radius = capsuleCollider.radius,
                         Height = capsuleCollider.height,
                         Direction = capsuleCollider.direction
@@ -259,7 +259,7 @@ namespace WithWhat.Editor
                     var sphereCollider = collider as SphereCollider;
                     var sphereTriggerData = new ExportSceneConfigTriggerSphere()
                     {
-                        Center = sphereCollider.center.ToString(),
+                        Center = sphereCollider.center.ToString("F5"),
                         Radius = sphereCollider.radius
                     };
                     editorSceneConfigTrigger.Data = JsonConvert.SerializeObject(sphereTriggerData);
