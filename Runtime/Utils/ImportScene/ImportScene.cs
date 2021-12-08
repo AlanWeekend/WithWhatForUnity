@@ -302,7 +302,7 @@ namespace WithWhat.Utils.ImportScene
                 {
                     return new GameObject();
                 }
-                else
+                else if(!_gameObjectCache.ContainsKey(config.GameObjectName))
                 {
                     var prefabPath = Path.GetFileNameWithoutExtension(config.PrefabPath);
 
