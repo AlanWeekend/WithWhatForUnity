@@ -42,7 +42,10 @@ namespace WithWhat.Utils.ImportScene
         /// 已加载的场景缓存
         /// </summary>
         private Dictionary<string, GameObject> _sceneCache;
-
+        /// <summary>
+        /// 当前场景
+        /// </summary>
+        private GameObject _currentScene;
         #region 构造
         private ImportScene() { }
         #endregion
@@ -77,7 +80,8 @@ namespace WithWhat.Utils.ImportScene
             // 加载所需的Prefab
             LoadPrefab(prefabPaths);
             // 实例化Prefab
-            return LoadScene(config);
+            _currentScene = LoadScene(config);
+            return _currentScene;
         }
 
         /// <summary>
@@ -96,9 +100,55 @@ namespace WithWhat.Utils.ImportScene
             // 异步所需的Prefab
             AsyncLoadPrefab(prefabPaths, prefabs =>
             {
+                _currentScene = LoadScene(config);
                 // 实例化Prefab
-                complated?.Invoke(LoadScene(config));
+                complated?.Invoke(_currentScene);
             });
+        }
+
+        /// <summary>
+        /// 切换场景
+        /// </summary>
+        /// <param name="SceneName"></param>
+        /// <returns></returns>
+        public GameObject SwitchScene(string SceneName)
+        {
+            if (_sceneCache.ContainsKey(SceneName))
+            {
+                _currentScene = _sceneCache[SceneName];
+            }
+            else
+            {
+                _currentScene.gameObject.SetActive(false);
+                LoadScene(SceneName);
+            }
+            _currentScene.gameObject.SetActive(true);
+            return _currentScene;
+        }
+
+        /// <summary>
+        /// 异步切换场景
+        /// </summary>
+        /// <param name="SceneName"></param>
+        /// <param name="complate"></param>
+        public void AsyncSwitchScene(string SceneName,Action<GameObject> complate)
+        {
+            if (_sceneCache.ContainsKey(SceneName))
+            {
+                _currentScene.gameObject.SetActive(false);
+                _currentScene = _sceneCache[SceneName];
+                _currentScene.gameObject.SetActive(true);
+                complate?.Invoke(_currentScene);
+            }
+            else
+            {
+                _currentScene.gameObject.SetActive(false);
+                AsyncLoadScene(SceneName, scene =>
+                {
+                    _currentScene = scene;
+                    complate?.Invoke(_currentScene);
+                });
+            }
         }
 
         /// <summary>
