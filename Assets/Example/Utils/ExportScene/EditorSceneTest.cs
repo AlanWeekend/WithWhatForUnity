@@ -9,21 +9,24 @@ public class EditorSceneTest : MonoBehaviour
     private void Awake()
     {
         ImportScene.Instance.Init(LoadPrefab, AsyncLoadPrefab,Unload);
-        ImportScene.Instance.LoadScene("AAA");
-        //ImportScene.Instance.AsyncLoadScene("Cubes", go =>
-        //{
+        //ImportScene.Instance.LoadScene("Cubes");
+        ImportScene.Instance.AsyncLoadScene("Cubes", go =>
+        {
 
-        //});
+        });
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ImportScene.Instance.AsyncSwitchScene("GameObject", go => { });
+        }
     }
 
     private void Unload(string prefabPath, GameObject Prefab)
     {
         Resources.UnloadAsset(Prefab);
-    }
-
-    void Start()
-    {
-               
     }
 
     private UnityEngine.Object LoadPrefab(string path)
