@@ -318,7 +318,8 @@ namespace WithWhat.Utils.ImportScene
             {
                 var prefab = Load?.Invoke(unloadPrefabPath) as GameObject;
                 if(_prefabCache==null) _prefabCache = new Dictionary<string, GameObject>();
-                _prefabCache.Add(prefab.name, prefab);
+                if(!_prefabCache.ContainsKey(prefab.name))
+                    _prefabCache.Add(prefab.name, prefab);
             }
         }
 
@@ -337,7 +338,8 @@ namespace WithWhat.Utils.ImportScene
                 // 加载完成后缓存这些预制体
                 foreach (var prefab in prefabs)
                 {
-                    _prefabCache.Add(prefab.name, prefab as GameObject);
+                    if(!_prefabCache.ContainsKey(prefab.name))
+                        _prefabCache.Add(prefab.name, prefab as GameObject);
                 }
 
                 // 调用加载完成回调
