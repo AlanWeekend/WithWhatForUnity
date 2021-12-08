@@ -70,6 +70,7 @@ namespace WithWhat.Utils.ImportScene
         {
             // 加载配置文件
             var config = LoadConfig(SceneName);
+            if (config == null) return null;
             // 收集配置文件中的Prefab路径
             var prefabPaths = new List<string>();
             GetPrefabPathsInConfig(config, prefabPaths);
@@ -88,6 +89,7 @@ namespace WithWhat.Utils.ImportScene
         {
             // 加载配置文件
             var config = LoadConfig(SceneName);
+            if (config == null) complated?.Invoke(null);
             // 收集配置文件中的Prefab路径
             var prefabPaths = new List<string>();
             GetPrefabPathsInConfig(config, prefabPaths);
@@ -137,6 +139,7 @@ namespace WithWhat.Utils.ImportScene
             var configTxt = Load(GetConfigPath(SceneName)) as TextAsset;
             if (configTxt == null)
             {
+                Debug.LogErrorFormat($"要导入的场景 {SceneName} 不存在");
                 return null;
             }
             return JsonConvert.DeserializeObject<ExportSceneConfig>(configTxt.text);
