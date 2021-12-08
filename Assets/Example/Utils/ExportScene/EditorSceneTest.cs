@@ -9,7 +9,7 @@ public class EditorSceneTest : MonoBehaviour
     private void Awake()
     {
         ImportScene.Instance.Init(LoadPrefab, AsyncLoadPrefab,Unload);
-        ImportScene.Instance.LoadScene("Cubes");
+        ImportScene.Instance.LoadScene("5000JLHC");
         //ImportScene.Instance.AsyncLoadScene("Cubes", go =>
         //{
 
