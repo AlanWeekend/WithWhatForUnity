@@ -113,13 +113,13 @@ namespace WithWhat.Utils.ImportScene
         /// <returns></returns>
         public GameObject SwitchScene(string SceneName)
         {
+            _currentScene.gameObject.SetActive(false);
             if (_sceneCache.ContainsKey(SceneName))
             {
                 _currentScene = _sceneCache[SceneName];
             }
             else
             {
-                _currentScene.gameObject.SetActive(false);
                 LoadScene(SceneName);
             }
             _currentScene.gameObject.SetActive(true);
@@ -142,7 +142,7 @@ namespace WithWhat.Utils.ImportScene
             }
             else
             {
-                _currentScene.gameObject.SetActive(false);
+                    _currentScene.gameObject.SetActive(false);
                 AsyncLoadScene(SceneName, scene =>
                 {
                     _currentScene = scene;
