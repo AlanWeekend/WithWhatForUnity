@@ -83,5 +83,55 @@ namespace WithWhat.Utils
             }
             return points;
         }
+
+        /// <summary>
+        /// 获取一组随机数 by lyb
+        /// </summary>
+        /// <param name="count">数量</param>
+        /// <param name="min">最小值</param>
+        /// <param name="max">最大值</param>
+        /// <param name="canRepeat">是否可以重复</param>
+        /// <param name="avoidRepetition">不允许出现的数字</param>
+        /// <returns></returns>
+        public static List<int> GetRandomNumbers(int count, int min, int max, bool canRepeat, List<int> avoidRepetition = null)
+        {
+            var list = new List<int>();
+            var arCount = avoidRepetition == null ? 0 : avoidRepetition.Count;
+            if (!canRepeat)
+            {
+                //如果可随机的数< 总数减去不可随机的数=剩余可随机的数
+                if ((max - min - arCount) < count)
+                {
+                    Debug.LogError("错误，无法实现");
+                    return null;
+                }
+            }
+
+            while (list.Count < count)
+            {
+                var index = Random.Range(min, max);
+                bool taboo = false;
+                if (avoidRepetition != null && arCount > 0)
+                {
+                    taboo = avoidRepetition.Contains(index);
+                }
+
+                if (!taboo)
+                {
+                    if (!canRepeat)
+                    {
+                        if (!list.Contains(index))
+                        {
+                            list.Add(index);
+                        }
+                    }
+                    else
+                    {
+                        list.Add(index);
+                    }
+                }
+            }
+            return list;
+        }
     }
 }
