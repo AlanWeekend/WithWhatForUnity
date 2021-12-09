@@ -251,7 +251,7 @@ namespace WithWhat.Utils.ImportScene
                     for (int i = 0; i < gamobject.transform.childCount; i++)
                     {
                         var cg = gamobject.transform.GetChild(i);
-                        if (cg.name.Equals(gamobject.name))
+                        if (cg.name.Equals(child.GameObjectName))
                         {
                             childGo = cg.gameObject;
                             break;

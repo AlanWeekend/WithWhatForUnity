@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.UI;
-using Newtonsoft.Json;
 using WithWhat.Utils.ImportScene;
 
 public class UITest : MonoBehaviour
