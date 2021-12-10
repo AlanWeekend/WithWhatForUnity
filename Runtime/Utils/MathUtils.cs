@@ -133,5 +133,28 @@ namespace WithWhat.Utils
             }
             return list;
         }
+
+        /// <summary>
+        /// 获取概率类型
+        /// </summary>
+        /// <param name="probabilitys">每种可能性的概率，例如[20,30,50]</param>
+        /// <returns>概率类型，第几种可能性</returns>
+        public static int GetRandomType(List<int> probabilitys)
+        {
+            var count = 0;
+            var probabilityRange = new List<int>();
+            foreach (var probability in probabilitys)
+            {
+                count += probability;
+                probabilityRange.Add(count);
+            }
+
+            var number = Random.Range(0, count);
+            for (int i = 0; i < probabilityRange.Count; i++)
+            {
+                if (number < probabilityRange[i]) return i;   
+            }
+            return -1;
+        }
     }
 }

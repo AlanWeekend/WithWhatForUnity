@@ -44,9 +44,10 @@ namespace WithWhat.Editor
             WithWhatEditorWindowUtil.DrawOneContent("说明", @"生成场景配置文件及prefab
 
 使用时的注意事项:
-1. 限于Unity本身的机制，Prefab不能生成到StreamingAsset文件下,否则无法加载到依赖关系,即使实例化到场景里,也仅是一个有预制体名字的空物体
+1. 限于Unity本身的机制，【Prefab不能生成到StreamingAsset文件下】,否则无法加载到依赖关系,即使实例化到场景里,也仅是一个有预制体名字的空物体
 2. 不支持变种Prefab，除对Transform组件外的修改都要重新保存一份 Original Prefab
 3. 导出前先执行清理冗余操作！！！
+4. 【引用不同Prefab的物体不能同名】，美术导出模型时尽量将最小单元模型合并成一个整体，且严格遵循命名规则
 
 目录结构说明：
 1. 'ConfigCollet.json' ：所有配置文件的引用
