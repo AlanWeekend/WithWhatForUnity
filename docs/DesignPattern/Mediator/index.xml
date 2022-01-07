@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>中介模式 on 用什么？这里或许能找到答案...</title>
+    <link>https://alanweekend.github.io/DesignPattern/Mediator/</link>
+    <description>Recent content in 中介模式 on 用什么？这里或许能找到答案...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 24 Nov 2021 15:10:21 +0800</lastBuildDate><atom:link href="https://alanweekend.github.io/DesignPattern/Mediator/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mediator</title>
+      <link>https://alanweekend.github.io/DesignPattern/Mediator/Mediator/</link>
+      <pubDate>Wed, 24 Nov 2021 15:10:21 +0800</pubDate>
+      
+      <guid>https://alanweekend.github.io/DesignPattern/Mediator/Mediator/</guid>
+      <description>Github Gitee
+WithWhat.DesignPattern
+描述    中介模式
+用法    using UnityEngine; using WithWhat.DesignPattern; public class MediatorTest : MonoBehaviour { public enum MediatorTestEnum { Test, } private void Awake() { Mediator.Instance.Register(MediatorTestEnum.Test, func); } private void func(int key, object[] param) { print($&amp;#34;{key} {param[0] as string}&amp;#34;); } } using UnityEngine; using WithWhat.DesignPattern; public class Send : MonoBehaviour { void Start() { Mediator.Instance.Send(MediatorTest.MediatorTestEnum.Test, &amp;#34;hello&amp;#34;); } } </description>
+    </item>
+    
+  </channel>
+</rss>

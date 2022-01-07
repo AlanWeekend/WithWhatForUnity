@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>服务定位模式 on 用什么？这里或许能找到答案...</title>
+    <link>https://alanweekend.github.io/DesignPattern/Inject/</link>
+    <description>Recent content in 服务定位模式 on 用什么？这里或许能找到答案...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 24 Nov 2021 14:49:46 +0800</lastBuildDate><atom:link href="https://alanweekend.github.io/DesignPattern/Inject/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ServiceLocator</title>
+      <link>https://alanweekend.github.io/DesignPattern/Inject/ServiceLocator/</link>
+      <pubDate>Wed, 24 Nov 2021 14:49:46 +0800</pubDate>
+      
+      <guid>https://alanweekend.github.io/DesignPattern/Inject/ServiceLocator/</guid>
+      <description>Github Gitee
+WithWhat.DesignPattern
+描述    服务定位模式，用于注入
+用法    using UnityEngine; using WithWhat.DesignPattern; public class InjectTest : MonoBehaviour { public class Foo { public void Do() { print($&amp;#34;{GetHashCode()}&amp;#34;); } } private void Awake() { ServiceLocator.RegisterSingleTon&amp;lt;Foo&amp;gt;(); } void Start() { var foo = ServiceLocator.Resolve&amp;lt;Foo&amp;gt;(); foo.Do(); } } </description>
+    </item>
+    
+  </channel>
+</rss>

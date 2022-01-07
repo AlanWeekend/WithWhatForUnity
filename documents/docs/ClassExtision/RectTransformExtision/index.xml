@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RectTransform类拓展 on 用什么？这里或许能找到答案...</title>
+    <link>https://alanweekend.github.io/ClassExtision/RectTransformExtision/</link>
+    <description>Recent content in RectTransform类拓展 on 用什么？这里或许能找到答案...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 22 Nov 2021 17:05:46 +0800</lastBuildDate><atom:link href="https://alanweekend.github.io/ClassExtision/RectTransformExtision/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GetMousePosition()</title>
+      <link>https://alanweekend.github.io/ClassExtision/RectTransformExtision/GetMousePosition/</link>
+      <pubDate>Mon, 22 Nov 2021 17:05:46 +0800</pubDate>
+      
+      <guid>https://alanweekend.github.io/ClassExtision/RectTransformExtision/GetMousePosition/</guid>
+      <description>Github Gitee
+WithWhat.ClassExtision
+描述    获取鼠标在UI上的位置 by lyb
+参数       参数名 类型 描述     camera Camera Screen Space - Camera 模式下需要传入画布指定的相机    返回值       类型 描述     Vector3 鼠标在UI上的位置    用法：    using UnityEngine; using WithWhat.ClassExtision; public class GetMousePositionTest : MonoBehaviour { void Update() { print((this.transform as RectTransform).</description>
+    </item>
+    
+    <item>
+      <title>WorldToCanvasPoint()</title>
+      <link>https://alanweekend.github.io/ClassExtision/RectTransformExtision/WorldToCanvasPoint/</link>
+      <pubDate>Mon, 22 Nov 2021 15:14:42 +0800</pubDate>
+      
+      <guid>https://alanweekend.github.io/ClassExtision/RectTransformExtision/WorldToCanvasPoint/</guid>
+      <description>Github Gitee
+WithWhat.ClassExtision
+描述    世界坐标转ui坐标
+参数       参数名 类型 描述     canvas Canvas 画布   worldPos Vector3 世界坐标    返回值       类型 描述     Vector2 UI坐标    用法：    using UnityEngine; using WithWhat.ClassExtision; public class WorldToCanvasPointTest : MonoBehaviour { public GameObject Cube; public Canvas canvas; void Start() { print(RectTransformExtision.</description>
+    </item>
+    
+  </channel>
+</rss>

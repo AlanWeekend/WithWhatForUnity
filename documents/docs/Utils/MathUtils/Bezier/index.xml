@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>贝塞尔曲线工具函数 on 用什么？这里或许能找到答案...</title>
+    <link>https://alanweekend.github.io/Utils/MathUtils/Bezier/</link>
+    <description>Recent content in 贝塞尔曲线工具函数 on 用什么？这里或许能找到答案...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 24 Nov 2021 15:37:54 +0800</lastBuildDate><atom:link href="https://alanweekend.github.io/Utils/MathUtils/Bezier/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bezier_3</title>
+      <link>https://alanweekend.github.io/Utils/MathUtils/Bezier/Bezier_3/</link>
+      <pubDate>Wed, 24 Nov 2021 15:37:54 +0800</pubDate>
+      
+      <guid>https://alanweekend.github.io/Utils/MathUtils/Bezier/Bezier_3/</guid>
+      <description>Github Gitee
+WithWhat.Utils
+描述    计算三次贝塞尔曲线上的所有点 by lyb
+参数       参数名 类型 描述     startPoint Vector3 起点   endPoint Vector3 终点   conttolPoint1 Vector3 控制点1   conttolPoint2 Vector3 控制点2   segementNum int 采样率，默认10    返回值       类型 描述     List 三次贝塞尔曲线上的所有点，点个数取决于采样率    </description>
+    </item>
+    
+    <item>
+      <title>Bezier_3_Single</title>
+      <link>https://alanweekend.github.io/Utils/MathUtils/Bezier/Bezier_3_Single/</link>
+      <pubDate>Wed, 24 Nov 2021 15:36:07 +0800</pubDate>
+      
+      <guid>https://alanweekend.github.io/Utils/MathUtils/Bezier/Bezier_3_Single/</guid>
+      <description>Github Gitee
+WithWhat.Utils
+描述    计算三次贝塞尔曲线点在某个采样上的点 by lyb
+参数       参数名 类型 描述     t float 采样   p0 Vector3 起点   p1 Vector3 控制点1   p2 Vector3 控制点2   p3 Vector3 终点    返回值       类型 描述     Vector3 三次贝塞尔曲线一个采样的点    </description>
+    </item>
+    
+    <item>
+      <title>Bezier_2()</title>
+      <link>https://alanweekend.github.io/Utils/MathUtils/Bezier/Bezier_2/</link>
+      <pubDate>Wed, 24 Nov 2021 15:32:38 +0800</pubDate>
+      
+      <guid>https://alanweekend.github.io/Utils/MathUtils/Bezier/Bezier_2/</guid>
+      <description>Github Gitee
+WithWhat.Utils
+描述    计算二次贝塞尔曲线上的所有点
+参数       参数名 类型 描述     startPoint Vector3 起点   endPoint Vector3 终点   conttolPoint Vector3 控制点   segementNum int 采样率，默认10    返回值       类型 描述     List 二次贝塞尔曲线上的所有点，点个数取决于采样率    </description>
+    </item>
+    
+    <item>
+      <title>Bezier_2_Single()</title>
+      <link>https://alanweekend.github.io/Utils/MathUtils/Bezier/Bezier_2_Single/</link>
+      <pubDate>Wed, 24 Nov 2021 15:27:26 +0800</pubDate>
+      
+      <guid>https://alanweekend.github.io/Utils/MathUtils/Bezier/Bezier_2_Single/</guid>
+      <description>Github Gitee
+WithWhat.Utils
+描述    计算二次贝塞尔曲线点在某个采样上的点
+参数       参数名 类型 描述     t float 采样   p0 Vector3 起点   p1 Vector3 控制点   p2 Vector3 终点    返回值       类型 描述     Vector3 二次贝塞尔曲线一个采样的点    </description>
+    </item>
+    
+  </channel>
+</rss>
