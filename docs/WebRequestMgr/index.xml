@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>HTTP请求 on 用什么？这里或许能找到答案...</title>
-    <link>https://alanweekend.github.io/WebRequestMgr/</link>
+    <link>http://yongshen.me/WithWhatForUnity/WebRequestMgr/</link>
     <description>Recent content in HTTP请求 on 用什么？这里或许能找到答案...</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 23 Nov 2021 12:01:14 +0800</lastBuildDate><atom:link href="https://alanweekend.github.io/WebRequestMgr/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Nov 2021 12:01:14 +0800</lastBuildDate><atom:link href="http://yongshen.me/WithWhatForUnity/WebRequestMgr/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>StartPostRequestByJson()</title>
-      <link>https://alanweekend.github.io/WebRequestMgr/StartPostRequestByJson/</link>
+      <link>http://yongshen.me/WithWhatForUnity/WebRequestMgr/StartPostRequestByJson/</link>
       <pubDate>Tue, 23 Nov 2021 12:01:14 +0800</pubDate>
       
-      <guid>https://alanweekend.github.io/WebRequestMgr/StartPostRequestByJson/</guid>
+      <guid>http://yongshen.me/WithWhatForUnity/WebRequestMgr/StartPostRequestByJson/</guid>
       <description>Github Gitee
 WithWhat.Net.Http
 描述    Post请求，通过json传参
@@ -20,10 +20,10 @@ WithWhat.Net.Http
     
     <item>
       <title>StartPostRequest()</title>
-      <link>https://alanweekend.github.io/WebRequestMgr/StartPostRequest/</link>
+      <link>http://yongshen.me/WithWhatForUnity/WebRequestMgr/StartPostRequest/</link>
       <pubDate>Tue, 23 Nov 2021 11:54:30 +0800</pubDate>
       
-      <guid>https://alanweekend.github.io/WebRequestMgr/StartPostRequest/</guid>
+      <guid>http://yongshen.me/WithWhatForUnity/WebRequestMgr/StartPostRequest/</guid>
       <description>Github Gitee
 WithWhat.Net.Http
 描述    Post请求
@@ -32,10 +32,10 @@ WithWhat.Net.Http
     
     <item>
       <title>Domain</title>
-      <link>https://alanweekend.github.io/WebRequestMgr/Domain/</link>
+      <link>http://yongshen.me/WithWhatForUnity/WebRequestMgr/Domain/</link>
       <pubDate>Fri, 19 Nov 2021 17:12:03 +0800</pubDate>
       
-      <guid>https://alanweekend.github.io/WebRequestMgr/Domain/</guid>
+      <guid>http://yongshen.me/WithWhatForUnity/WebRequestMgr/Domain/</guid>
       <description>Github Gitee
 WithWhat.Net.Http
 描述    设置Http请求的基础域名，必须设置
@@ -44,10 +44,10 @@ WithWhat.Net.Http
     
     <item>
       <title>StartGetRequest()</title>
-      <link>https://alanweekend.github.io/WebRequestMgr/StartGetRequest/</link>
+      <link>http://yongshen.me/WithWhatForUnity/WebRequestMgr/StartGetRequest/</link>
       <pubDate>Fri, 19 Nov 2021 17:12:03 +0800</pubDate>
       
-      <guid>https://alanweekend.github.io/WebRequestMgr/StartGetRequest/</guid>
+      <guid>http://yongshen.me/WithWhatForUnity/WebRequestMgr/StartGetRequest/</guid>
       <description>Github Gitee
 WithWhat.Net.Http
 描述    Get请求

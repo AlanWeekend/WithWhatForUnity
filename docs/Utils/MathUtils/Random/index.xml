@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>随机数工具函数 on 用什么？这里或许能找到答案...</title>
-    <link>https://alanweekend.github.io/Utils/MathUtils/Random/</link>
+    <link>http://yongshen.me/WithWhatForUnity/Utils/MathUtils/Random/</link>
     <description>Recent content in 随机数工具函数 on 用什么？这里或许能找到答案...</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 10 Dec 2021 17:06:28 +0800</lastBuildDate><atom:link href="https://alanweekend.github.io/Utils/MathUtils/Random/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Dec 2021 17:06:28 +0800</lastBuildDate><atom:link href="http://yongshen.me/WithWhatForUnity/Utils/MathUtils/Random/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GetRandomType()</title>
-      <link>https://alanweekend.github.io/Utils/MathUtils/Random/GetRandomType/</link>
+      <link>http://yongshen.me/WithWhatForUnity/Utils/MathUtils/Random/GetRandomType/</link>
       <pubDate>Fri, 10 Dec 2021 17:06:28 +0800</pubDate>
       
-      <guid>https://alanweekend.github.io/Utils/MathUtils/Random/GetRandomType/</guid>
+      <guid>http://yongshen.me/WithWhatForUnity/Utils/MathUtils/Random/GetRandomType/</guid>
       <description>Github Gitee
 WithWhat.Utils
 描述    获取概率类型
@@ -20,10 +20,10 @@ WithWhat.Utils
     
     <item>
       <title>GetRandomNumbers()</title>
-      <link>https://alanweekend.github.io/Utils/MathUtils/Random/GetRandomNumbers/</link>
+      <link>http://yongshen.me/WithWhatForUnity/Utils/MathUtils/Random/GetRandomNumbers/</link>
       <pubDate>Thu, 09 Dec 2021 10:49:08 +0800</pubDate>
       
-      <guid>https://alanweekend.github.io/Utils/MathUtils/Random/GetRandomNumbers/</guid>
+      <guid>http://yongshen.me/WithWhatForUnity/Utils/MathUtils/Random/GetRandomNumbers/</guid>
       <description>Github Gitee
 WithWhat.Utils
 描述    获取一组随机数 by lyb
