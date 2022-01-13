@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>单例模板 on 用什么？这里或许能找到答案...</title>
-    <link>https://alanweekend.github.io/DesignPattern/SingleTon/</link>
+    <link>https://yongshen.me/WithWhatForUnity/DesignPattern/SingleTon/</link>
     <description>Recent content in 单例模板 on 用什么？这里或许能找到答案...</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 23 Nov 2021 14:08:45 +0800</lastBuildDate><atom:link href="https://alanweekend.github.io/DesignPattern/SingleTon/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Nov 2021 14:08:45 +0800</lastBuildDate><atom:link href="https://yongshen.me/WithWhatForUnity/DesignPattern/SingleTon/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SingleTon</title>
-      <link>https://alanweekend.github.io/DesignPattern/SingleTon/SingleTon/</link>
+      <link>https://yongshen.me/WithWhatForUnity/DesignPattern/SingleTon/SingleTon/</link>
       <pubDate>Tue, 23 Nov 2021 14:08:45 +0800</pubDate>
       
-      <guid>https://alanweekend.github.io/DesignPattern/SingleTon/SingleTon/</guid>
+      <guid>https://yongshen.me/WithWhatForUnity/DesignPattern/SingleTon/SingleTon/</guid>
       <description>Github Gitee
 WithWhat.DesignPattern
 描述    单例模板
@@ -20,10 +20,10 @@ WithWhat.DesignPattern
     
     <item>
       <title>MonoSingleTon</title>
-      <link>https://alanweekend.github.io/DesignPattern/SingleTon/MonoSingleTon/</link>
+      <link>https://yongshen.me/WithWhatForUnity/DesignPattern/SingleTon/MonoSingleTon/</link>
       <pubDate>Tue, 23 Nov 2021 14:02:09 +0800</pubDate>
       
-      <guid>https://alanweekend.github.io/DesignPattern/SingleTon/MonoSingleTon/</guid>
+      <guid>https://yongshen.me/WithWhatForUnity/DesignPattern/SingleTon/MonoSingleTon/</guid>
       <description>Github Gitee
 WithWhat.DesignPattern
 描述    Mono单例模板，当脚本没有手动挂载到GameObject上时，会自动创建一个DontDestory的物体
