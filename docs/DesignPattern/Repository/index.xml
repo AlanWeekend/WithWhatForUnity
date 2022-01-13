@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>仓储模式 on 用什么？这里或许能找到答案...</title>
-    <link>http://yongshen.me/WithWhatForUnity/DesignPattern/Repository/</link>
+    <link>https://alanweekend.github.io/DesignPattern/Repository/</link>
     <description>Recent content in 仓储模式 on 用什么？这里或许能找到答案...</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 24 Nov 2021 15:17:10 +0800</lastBuildDate><atom:link href="http://yongshen.me/WithWhatForUnity/DesignPattern/Repository/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Nov 2021 15:17:10 +0800</lastBuildDate><atom:link href="https://alanweekend.github.io/DesignPattern/Repository/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FileSystemRepository</title>
-      <link>http://yongshen.me/WithWhatForUnity/DesignPattern/Repository/FileSystemRepository/</link>
+      <link>https://alanweekend.github.io/DesignPattern/Repository/FileSystemRepository/</link>
       <pubDate>Wed, 24 Nov 2021 15:17:10 +0800</pubDate>
       
-      <guid>http://yongshen.me/WithWhatForUnity/DesignPattern/Repository/FileSystemRepository/</guid>
+      <guid>https://alanweekend.github.io/DesignPattern/Repository/FileSystemRepository/</guid>
       <description>Github Gitee
 WithWhat.DesignPattern
 描述    文件仓储

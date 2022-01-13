@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>服务定位模式 on 用什么？这里或许能找到答案...</title>
-    <link>http://yongshen.me/WithWhatForUnity/DesignPattern/Inject/</link>
+    <link>https://alanweekend.github.io/DesignPattern/Inject/</link>
     <description>Recent content in 服务定位模式 on 用什么？这里或许能找到答案...</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 24 Nov 2021 14:49:46 +0800</lastBuildDate><atom:link href="http://yongshen.me/WithWhatForUnity/DesignPattern/Inject/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Nov 2021 14:49:46 +0800</lastBuildDate><atom:link href="https://alanweekend.github.io/DesignPattern/Inject/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ServiceLocator</title>
-      <link>http://yongshen.me/WithWhatForUnity/DesignPattern/Inject/ServiceLocator/</link>
+      <link>https://alanweekend.github.io/DesignPattern/Inject/ServiceLocator/</link>
       <pubDate>Wed, 24 Nov 2021 14:49:46 +0800</pubDate>
       
-      <guid>http://yongshen.me/WithWhatForUnity/DesignPattern/Inject/ServiceLocator/</guid>
+      <guid>https://alanweekend.github.io/DesignPattern/Inject/ServiceLocator/</guid>
       <description>Github Gitee
 WithWhat.DesignPattern
 描述    服务定位模式，用于注入

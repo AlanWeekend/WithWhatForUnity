@@ -107,3 +107,8 @@ main:
           sub:
             - name: "StringToVector3"
               ref: "/Utils/Vector3Utils/StringToVector3"
+        - name: "List类拓展"
+          ref: "/Utils/ListUtils"
+          sub:
+            - name: "RemoveMatch"
+              ref: "/Utils/ListUtils/RemoveMatch"

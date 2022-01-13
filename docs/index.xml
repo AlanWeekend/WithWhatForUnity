@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>用什么？这里或许能找到答案...</title>
-    <link>http://yongshen.me/WithWhatForUnity/</link>
+    <link>https://alanweekend.github.io/</link>
     <description>Recent content on 用什么？这里或许能找到答案...</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 10 Dec 2021 17:06:28 +0800</lastBuildDate><atom:link href="http://yongshen.me/WithWhatForUnity/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Dec 2021 17:06:28 +0800</lastBuildDate><atom:link href="https://alanweekend.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GetRandomType()</title>
-      <link>http://yongshen.me/WithWhatForUnity/Utils/MathUtils/Random/GetRandomType/</link>
+      <link>https://alanweekend.github.io/Utils/MathUtils/Random/GetRandomType/</link>
       <pubDate>Fri, 10 Dec 2021 17:06:28 +0800</pubDate>
       
-      <guid>http://yongshen.me/WithWhatForUnity/Utils/MathUtils/Random/GetRandomType/</guid>
+      <guid>https://alanweekend.github.io/Utils/MathUtils/Random/GetRandomType/</guid>
       <description>Github Gitee
 WithWhat.Utils
 描述    获取概率类型
@@ -19,11 +19,23 @@ WithWhat.Utils
     </item>
     
     <item>
+      <title>RemoveMatch()</title>
+      <link>https://alanweekend.github.io/Utils/ListUtils/RemoveMatch/</link>
+      <pubDate>Fri, 10 Dec 2021 17:06:28 +0800</pubDate>
+      
+      <guid>https://alanweekend.github.io/Utils/ListUtils/RemoveMatch/</guid>
+      <description>Github Gitee
+WithWhat.Utils
+描述    删除List中符合条件的所有元素，不会产生额外的GC，只遍历一次集合 详情
+参数       参数名 类型 描述     Match Predicate 匹配函数    </description>
+    </item>
+    
+    <item>
       <title>GetRandomNumbers()</title>
-      <link>http://yongshen.me/WithWhatForUnity/Utils/MathUtils/Random/GetRandomNumbers/</link>
+      <link>https://alanweekend.github.io/Utils/MathUtils/Random/GetRandomNumbers/</link>
       <pubDate>Thu, 09 Dec 2021 10:49:08 +0800</pubDate>
       
-      <guid>http://yongshen.me/WithWhatForUnity/Utils/MathUtils/Random/GetRandomNumbers/</guid>
+      <guid>https://alanweekend.github.io/Utils/MathUtils/Random/GetRandomNumbers/</guid>
       <description>Github Gitee
 WithWhat.Utils
 描述    获取一组随机数 by lyb
@@ -32,10 +44,10 @@ WithWhat.Utils
     
     <item>
       <title>StringToVector3()</title>
-      <link>http://yongshen.me/WithWhatForUnity/Utils/Vector3Utils/StringToVector3/</link>
+      <link>https://alanweekend.github.io/Utils/Vector3Utils/StringToVector3/</link>
       <pubDate>Wed, 24 Nov 2021 15:50:26 +0800</pubDate>
       
-      <guid>http://yongshen.me/WithWhatForUnity/Utils/Vector3Utils/StringToVector3/</guid>
+      <guid>https://alanweekend.github.io/Utils/Vector3Utils/StringToVector3/</guid>
       <description>Github Gitee
 WithWhat.Utils
 描述    字符串转v3
@@ -44,10 +56,10 @@ WithWhat.Utils
     
     <item>
       <title>Bezier_3</title>
-      <link>http://yongshen.me/WithWhatForUnity/Utils/MathUtils/Bezier/Bezier_3/</link>
+      <link>https://alanweekend.github.io/Utils/MathUtils/Bezier/Bezier_3/</link>
       <pubDate>Wed, 24 Nov 2021 15:37:54 +0800</pubDate>
       
-      <guid>http://yongshen.me/WithWhatForUnity/Utils/MathUtils/Bezier/Bezier_3/</guid>
+      <guid>https://alanweekend.github.io/Utils/MathUtils/Bezier/Bezier_3/</guid>
       <description>Github Gitee
 WithWhat.Utils
 描述    计算三次贝塞尔曲线上的所有点 by lyb
@@ -56,10 +68,10 @@ WithWhat.Utils
     
     <item>
       <title>Bezier_3_Single</title>
-      <link>http://yongshen.me/WithWhatForUnity/Utils/MathUtils/Bezier/Bezier_3_Single/</link>
+      <link>https://alanweekend.github.io/Utils/MathUtils/Bezier/Bezier_3_Single/</link>
       <pubDate>Wed, 24 Nov 2021 15:36:07 +0800</pubDate>
       
-      <guid>http://yongshen.me/WithWhatForUnity/Utils/MathUtils/Bezier/Bezier_3_Single/</guid>
+      <guid>https://alanweekend.github.io/Utils/MathUtils/Bezier/Bezier_3_Single/</guid>
       <description>Github Gitee
 WithWhat.Utils
 描述    计算三次贝塞尔曲线点在某个采样上的点 by lyb
@@ -68,10 +80,10 @@ WithWhat.Utils
     
     <item>
       <title>Bezier_2()</title>
-      <link>http://yongshen.me/WithWhatForUnity/Utils/MathUtils/Bezier/Bezier_2/</link>
+      <link>https://alanweekend.github.io/Utils/MathUtils/Bezier/Bezier_2/</link>
       <pubDate>Wed, 24 Nov 2021 15:32:38 +0800</pubDate>
       
-      <guid>http://yongshen.me/WithWhatForUnity/Utils/MathUtils/Bezier/Bezier_2/</guid>
+      <guid>https://alanweekend.github.io/Utils/MathUtils/Bezier/Bezier_2/</guid>
       <description>Github Gitee
 WithWhat.Utils
 描述    计算二次贝塞尔曲线上的所有点
@@ -80,10 +92,10 @@ WithWhat.Utils
     
     <item>
       <title>Bezier_2_Single()</title>
-      <link>http://yongshen.me/WithWhatForUnity/Utils/MathUtils/Bezier/Bezier_2_Single/</link>
+      <link>https://alanweekend.github.io/Utils/MathUtils/Bezier/Bezier_2_Single/</link>
       <pubDate>Wed, 24 Nov 2021 15:27:26 +0800</pubDate>
       
-      <guid>http://yongshen.me/WithWhatForUnity/Utils/MathUtils/Bezier/Bezier_2_Single/</guid>
+      <guid>https://alanweekend.github.io/Utils/MathUtils/Bezier/Bezier_2_Single/</guid>
       <description>Github Gitee
 WithWhat.Utils
 描述    计算二次贝塞尔曲线点在某个采样上的点
@@ -92,10 +104,10 @@ WithWhat.Utils
     
     <item>
       <title>FileSystemRepository</title>
-      <link>http://yongshen.me/WithWhatForUnity/DesignPattern/Repository/FileSystemRepository/</link>
+      <link>https://alanweekend.github.io/DesignPattern/Repository/FileSystemRepository/</link>
       <pubDate>Wed, 24 Nov 2021 15:17:10 +0800</pubDate>
       
-      <guid>http://yongshen.me/WithWhatForUnity/DesignPattern/Repository/FileSystemRepository/</guid>
+      <guid>https://alanweekend.github.io/DesignPattern/Repository/FileSystemRepository/</guid>
       <description>Github Gitee
 WithWhat.DesignPattern
 描述    文件仓储
@@ -104,10 +116,10 @@ WithWhat.DesignPattern
     
     <item>
       <title>Mediator</title>
-      <link>http://yongshen.me/WithWhatForUnity/DesignPattern/Mediator/Mediator/</link>
+      <link>https://alanweekend.github.io/DesignPattern/Mediator/Mediator/</link>
       <pubDate>Wed, 24 Nov 2021 15:10:21 +0800</pubDate>
       
-      <guid>http://yongshen.me/WithWhatForUnity/DesignPattern/Mediator/Mediator/</guid>
+      <guid>https://alanweekend.github.io/DesignPattern/Mediator/Mediator/</guid>
       <description>Github Gitee
 WithWhat.DesignPattern
 描述    中介模式
@@ -116,10 +128,10 @@ WithWhat.DesignPattern
     
     <item>
       <title>ServiceLocator</title>
-      <link>http://yongshen.me/WithWhatForUnity/DesignPattern/Inject/ServiceLocator/</link>
+      <link>https://alanweekend.github.io/DesignPattern/Inject/ServiceLocator/</link>
       <pubDate>Wed, 24 Nov 2021 14:49:46 +0800</pubDate>
       
-      <guid>http://yongshen.me/WithWhatForUnity/DesignPattern/Inject/ServiceLocator/</guid>
+      <guid>https://alanweekend.github.io/DesignPattern/Inject/ServiceLocator/</guid>
       <description>Github Gitee
 WithWhat.DesignPattern
 描述    服务定位模式，用于注入
@@ -128,10 +140,10 @@ WithWhat.DesignPattern
     
     <item>
       <title>TransientObjectFactory</title>
-      <link>http://yongshen.me/WithWhatForUnity/DesignPattern/Factory/TransientObjectFactory/</link>
+      <link>https://alanweekend.github.io/DesignPattern/Factory/TransientObjectFactory/</link>
       <pubDate>Wed, 24 Nov 2021 11:46:06 +0800</pubDate>
       
-      <guid>http://yongshen.me/WithWhatForUnity/DesignPattern/Factory/TransientObjectFactory/</guid>
+      <guid>https://alanweekend.github.io/DesignPattern/Factory/TransientObjectFactory/</guid>
       <description>Github Gitee
 WithWhat.DesignPattern
 描述    临时对象池工厂
@@ -140,10 +152,10 @@ WithWhat.DesignPattern
     
     <item>
       <title>SingleTonObejctFactory</title>
-      <link>http://yongshen.me/WithWhatForUnity/DesignPattern/Factory/SingleTonObejctFactory/</link>
+      <link>https://alanweekend.github.io/DesignPattern/Factory/SingleTonObejctFactory/</link>
       <pubDate>Wed, 24 Nov 2021 11:25:04 +0800</pubDate>
       
-      <guid>http://yongshen.me/WithWhatForUnity/DesignPattern/Factory/SingleTonObejctFactory/</guid>
+      <guid>https://alanweekend.github.io/DesignPattern/Factory/SingleTonObejctFactory/</guid>
       <description>Github Gitee
 WithWhat.DesignPattern
 描述    单例池工厂
@@ -152,10 +164,10 @@ WithWhat.DesignPattern
     
     <item>
       <title>PoolObjectFactory</title>
-      <link>http://yongshen.me/WithWhatForUnity/DesignPattern/Factory/PoolObjectFactory/</link>
+      <link>https://alanweekend.github.io/DesignPattern/Factory/PoolObjectFactory/</link>
       <pubDate>Wed, 24 Nov 2021 11:19:45 +0800</pubDate>
       
-      <guid>http://yongshen.me/WithWhatForUnity/DesignPattern/Factory/PoolObjectFactory/</guid>
+      <guid>https://alanweekend.github.io/DesignPattern/Factory/PoolObjectFactory/</guid>
       <description>Github Gitee
 WithWhat.DesignPattern
 描述    对象池工厂
@@ -164,10 +176,10 @@ WithWhat.DesignPattern
     
     <item>
       <title>SingleTon</title>
-      <link>http://yongshen.me/WithWhatForUnity/DesignPattern/SingleTon/SingleTon/</link>
+      <link>https://alanweekend.github.io/DesignPattern/SingleTon/SingleTon/</link>
       <pubDate>Tue, 23 Nov 2021 14:08:45 +0800</pubDate>
       
-      <guid>http://yongshen.me/WithWhatForUnity/DesignPattern/SingleTon/SingleTon/</guid>
+      <guid>https://alanweekend.github.io/DesignPattern/SingleTon/SingleTon/</guid>
       <description>Github Gitee
 WithWhat.DesignPattern
 描述    单例模板
@@ -176,10 +188,10 @@ WithWhat.DesignPattern
     
     <item>
       <title>MonoSingleTon</title>
-      <link>http://yongshen.me/WithWhatForUnity/DesignPattern/SingleTon/MonoSingleTon/</link>
+      <link>https://alanweekend.github.io/DesignPattern/SingleTon/MonoSingleTon/</link>
       <pubDate>Tue, 23 Nov 2021 14:02:09 +0800</pubDate>
       
-      <guid>http://yongshen.me/WithWhatForUnity/DesignPattern/SingleTon/MonoSingleTon/</guid>
+      <guid>https://alanweekend.github.io/DesignPattern/SingleTon/MonoSingleTon/</guid>
       <description>Github Gitee
 WithWhat.DesignPattern
 描述    Mono单例模板，当脚本没有手动挂载到GameObject上时，会自动创建一个DontDestory的物体
@@ -188,10 +200,10 @@ WithWhat.DesignPattern
     
     <item>
       <title>StartPostRequestByJson()</title>
-      <link>http://yongshen.me/WithWhatForUnity/WebRequestMgr/StartPostRequestByJson/</link>
+      <link>https://alanweekend.github.io/WebRequestMgr/StartPostRequestByJson/</link>
       <pubDate>Tue, 23 Nov 2021 12:01:14 +0800</pubDate>
       
-      <guid>http://yongshen.me/WithWhatForUnity/WebRequestMgr/StartPostRequestByJson/</guid>
+      <guid>https://alanweekend.github.io/WebRequestMgr/StartPostRequestByJson/</guid>
       <description>Github Gitee
 WithWhat.Net.Http
 描述    Post请求，通过json传参
@@ -200,10 +212,10 @@ WithWhat.Net.Http
     
     <item>
       <title>StartPostRequest()</title>
-      <link>http://yongshen.me/WithWhatForUnity/WebRequestMgr/StartPostRequest/</link>
+      <link>https://alanweekend.github.io/WebRequestMgr/StartPostRequest/</link>
       <pubDate>Tue, 23 Nov 2021 11:54:30 +0800</pubDate>
       
-      <guid>http://yongshen.me/WithWhatForUnity/WebRequestMgr/StartPostRequest/</guid>
+      <guid>https://alanweekend.github.io/WebRequestMgr/StartPostRequest/</guid>
       <description>Github Gitee
 WithWhat.Net.Http
 描述    Post请求
@@ -212,10 +224,10 @@ WithWhat.Net.Http
     
     <item>
       <title>GetMousePosition()</title>
-      <link>http://yongshen.me/WithWhatForUnity/ClassExtision/RectTransformExtision/GetMousePosition/</link>
+      <link>https://alanweekend.github.io/ClassExtision/RectTransformExtision/GetMousePosition/</link>
       <pubDate>Mon, 22 Nov 2021 17:05:46 +0800</pubDate>
       
-      <guid>http://yongshen.me/WithWhatForUnity/ClassExtision/RectTransformExtision/GetMousePosition/</guid>
+      <guid>https://alanweekend.github.io/ClassExtision/RectTransformExtision/GetMousePosition/</guid>
       <description>Github Gitee
 WithWhat.ClassExtision
 描述    获取鼠标在UI上的位置 by lyb
@@ -224,10 +236,10 @@ WithWhat.ClassExtision
     
     <item>
       <title>Middle()</title>
-      <link>http://yongshen.me/WithWhatForUnity/ClassExtision/Vector3Extision/Middle/</link>
+      <link>https://alanweekend.github.io/ClassExtision/Vector3Extision/Middle/</link>
       <pubDate>Mon, 22 Nov 2021 16:30:03 +0800</pubDate>
       
-      <guid>http://yongshen.me/WithWhatForUnity/ClassExtision/Vector3Extision/Middle/</guid>
+      <guid>https://alanweekend.github.io/ClassExtision/Vector3Extision/Middle/</guid>
       <description>Github Gitee
 WithWhat.ClassExtision
 描述    计算两个点的中点
@@ -236,10 +248,10 @@ WithWhat.ClassExtision
     
     <item>
       <title>FindChildByName()</title>
-      <link>http://yongshen.me/WithWhatForUnity/ClassExtision/TransformExtision/FindChildByName/</link>
+      <link>https://alanweekend.github.io/ClassExtision/TransformExtision/FindChildByName/</link>
       <pubDate>Mon, 22 Nov 2021 16:22:17 +0800</pubDate>
       
-      <guid>http://yongshen.me/WithWhatForUnity/ClassExtision/TransformExtision/FindChildByName/</guid>
+      <guid>https://alanweekend.github.io/ClassExtision/TransformExtision/FindChildByName/</guid>
       <description>Github Gitee
 WithWhat.ClassExtision
 描述    根据名称查找子物体（递归）
@@ -248,10 +260,10 @@ WithWhat.ClassExtision
     
     <item>
       <title>SetPostionToMousePosition()</title>
-      <link>http://yongshen.me/WithWhatForUnity/ClassExtision/TransformExtision/SetPostionToMousePosition/</link>
+      <link>https://alanweekend.github.io/ClassExtision/TransformExtision/SetPostionToMousePosition/</link>
       <pubDate>Mon, 22 Nov 2021 16:06:00 +0800</pubDate>
       
-      <guid>http://yongshen.me/WithWhatForUnity/ClassExtision/TransformExtision/SetPostionToMousePosition/</guid>
+      <guid>https://alanweekend.github.io/ClassExtision/TransformExtision/SetPostionToMousePosition/</guid>
       <description>Github Gitee
 WithWhat.ClassExtision
 描述    设置物体的世界坐标为鼠标所在位置
@@ -260,10 +272,10 @@ WithWhat.ClassExtision
     
     <item>
       <title>SetChildsActive()</title>
-      <link>http://yongshen.me/WithWhatForUnity/ClassExtision/TransformExtision/SetChildsActive/</link>
+      <link>https://alanweekend.github.io/ClassExtision/TransformExtision/SetChildsActive/</link>
       <pubDate>Mon, 22 Nov 2021 15:53:44 +0800</pubDate>
       
-      <guid>http://yongshen.me/WithWhatForUnity/ClassExtision/TransformExtision/SetChildsActive/</guid>
+      <guid>https://alanweekend.github.io/ClassExtision/TransformExtision/SetChildsActive/</guid>
       <description>Github Gitee
 WithWhat.ClassExtision
 描述    设置所有子物体的active，不包含孙物体
@@ -272,10 +284,10 @@ WithWhat.ClassExtision
     
     <item>
       <title>GetChilds()</title>
-      <link>http://yongshen.me/WithWhatForUnity/ClassExtision/TransformExtision/GetChilds/</link>
+      <link>https://alanweekend.github.io/ClassExtision/TransformExtision/GetChilds/</link>
       <pubDate>Mon, 22 Nov 2021 15:47:44 +0800</pubDate>
       
-      <guid>http://yongshen.me/WithWhatForUnity/ClassExtision/TransformExtision/GetChilds/</guid>
+      <guid>https://alanweekend.github.io/ClassExtision/TransformExtision/GetChilds/</guid>
       <description>Github Gitee
 WithWhat.ClassExtision
 描述    获取所有的子物体，不包含孙物体
@@ -284,10 +296,10 @@ WithWhat.ClassExtision
     
     <item>
       <title>WorldToCanvasPoint()</title>
-      <link>http://yongshen.me/WithWhatForUnity/ClassExtision/RectTransformExtision/WorldToCanvasPoint/</link>
+      <link>https://alanweekend.github.io/ClassExtision/RectTransformExtision/WorldToCanvasPoint/</link>
       <pubDate>Mon, 22 Nov 2021 15:14:42 +0800</pubDate>
       
-      <guid>http://yongshen.me/WithWhatForUnity/ClassExtision/RectTransformExtision/WorldToCanvasPoint/</guid>
+      <guid>https://alanweekend.github.io/ClassExtision/RectTransformExtision/WorldToCanvasPoint/</guid>
       <description>Github Gitee
 WithWhat.ClassExtision
 描述    世界坐标转ui坐标
@@ -296,10 +308,10 @@ WithWhat.ClassExtision
     
     <item>
       <title>GetEnumNamesList()</title>
-      <link>http://yongshen.me/WithWhatForUnity/ClassExtision/EnumExtision/GetEnumNamesList/</link>
+      <link>https://alanweekend.github.io/ClassExtision/EnumExtision/GetEnumNamesList/</link>
       <pubDate>Mon, 22 Nov 2021 13:59:12 +0800</pubDate>
       
-      <guid>http://yongshen.me/WithWhatForUnity/ClassExtision/EnumExtision/GetEnumNamesList/</guid>
+      <guid>https://alanweekend.github.io/ClassExtision/EnumExtision/GetEnumNamesList/</guid>
       <description>Github Gitee
 WithWhat.ClassExtision
 描述    获取枚举类型中所有的字段名组成的字符串List
@@ -308,10 +320,10 @@ WithWhat.ClassExtision
     
     <item>
       <title>Domain</title>
-      <link>http://yongshen.me/WithWhatForUnity/WebRequestMgr/Domain/</link>
+      <link>https://alanweekend.github.io/WebRequestMgr/Domain/</link>
       <pubDate>Fri, 19 Nov 2021 17:12:03 +0800</pubDate>
       
-      <guid>http://yongshen.me/WithWhatForUnity/WebRequestMgr/Domain/</guid>
+      <guid>https://alanweekend.github.io/WebRequestMgr/Domain/</guid>
       <description>Github Gitee
 WithWhat.Net.Http
 描述    设置Http请求的基础域名，必须设置
@@ -320,10 +332,10 @@ WithWhat.Net.Http
     
     <item>
       <title>StartGetRequest()</title>
-      <link>http://yongshen.me/WithWhatForUnity/WebRequestMgr/StartGetRequest/</link>
+      <link>https://alanweekend.github.io/WebRequestMgr/StartGetRequest/</link>
       <pubDate>Fri, 19 Nov 2021 17:12:03 +0800</pubDate>
       
-      <guid>http://yongshen.me/WithWhatForUnity/WebRequestMgr/StartGetRequest/</guid>
+      <guid>https://alanweekend.github.io/WebRequestMgr/StartGetRequest/</guid>
       <description>Github Gitee
 WithWhat.Net.Http
 描述    Get请求

@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /tags/*
 
-Sitemap: http://yongshen.me/WithWhatForUnity/sitemap.xml
+Sitemap: https://alanweekend.github.io/sitemap.xml
