@@ -11,7 +11,7 @@ namespace WithWhat.Editor
         public static int FONTSIZE = 18;
 
         private EditorWindowBatchReplaceMaterials _batchReplaceMaterials;
-        private EditorWindowExportScene _editorWindowEditScene;
+        private EditorWindowExportScene _editorWindowExportScene;
         private EditorWindowBatchUpdateGameObjectName _batchUpdateGameObjectName;
         #endregion
 
@@ -29,7 +29,7 @@ namespace WithWhat.Editor
         private void OnEnable()
         {
             _batchReplaceMaterials = ScriptableObject.CreateInstance<EditorWindowBatchReplaceMaterials>();
-            _editorWindowEditScene = ScriptableObject.CreateInstance<EditorWindowExportScene>();
+            _editorWindowExportScene = ScriptableObject.CreateInstance<EditorWindowExportScene>();
             _batchUpdateGameObjectName = ScriptableObject.CreateInstance<EditorWindowBatchUpdateGameObjectName>();
         }
         #endregion
@@ -66,7 +66,7 @@ namespace WithWhat.Editor
                     _batchReplaceMaterials.DrawGUI();
                     break;
                 case 1:
-                    _editorWindowEditScene.DrawGUI();
+                    _editorWindowExportScene.DrawGUI();
                     break;
                 case 2:
                     _batchUpdateGameObjectName.DrawGUI();
