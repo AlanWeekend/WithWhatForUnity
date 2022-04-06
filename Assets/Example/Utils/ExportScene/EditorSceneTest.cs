@@ -10,7 +10,7 @@ public class EditorSceneTest : MonoBehaviour
     {
         ImportScene.Instance.Init(LoadPrefab, AsyncLoadPrefab,Unload);
         //ImportScene.Instance.LoadScene("Cubes");
-        ImportScene.Instance.AsyncLoadScene("Cubes", go =>
+        ImportScene.Instance.AsyncLoadScene("Sphere", go =>
         {
 
         });
@@ -20,7 +20,7 @@ public class EditorSceneTest : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            ImportScene.Instance.AsyncSwitchScene("GameObject", go => { });
+            ImportScene.Instance.AsyncSwitchScene("Sphere", go => { });
         }
     }
 
@@ -29,11 +29,21 @@ public class EditorSceneTest : MonoBehaviour
         Resources.UnloadAsset(Prefab);
     }
 
+    /// <summary>
+    /// 自定义资源加载方法
+    /// </summary>
+    /// <param name="path"></param>
+    /// <returns></returns>
     private UnityEngine.Object LoadPrefab(string path)
     {
         return Resources.Load(path);
     }
 
+    /// <summary>
+    /// 自定义资源异步加载方法
+    /// </summary>
+    /// <param name="paths"></param>
+    /// <param name="action"></param>
     private void AsyncLoadPrefab(List<string> paths,Action<List<UnityEngine.Object>> action)
     {
         StartCoroutine(AsyncLoad(paths, action));

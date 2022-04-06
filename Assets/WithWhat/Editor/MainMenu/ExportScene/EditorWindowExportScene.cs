@@ -10,7 +10,6 @@ namespace WithWhat.Editor
 {
     public class EditorWindowExportScene : EditorWindow
     {
-
         private GameObject _targetGo;
         /// <summary>
         /// 选择的路径
