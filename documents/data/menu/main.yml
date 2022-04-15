@@ -112,3 +112,8 @@ main:
           sub:
             - name: "RemoveMatch"
               ref: "/Utils/ListUtils/RemoveMatch"
+        - name: "UI工具类"
+          ref: "/Utils/UIUtils"
+          sub:
+            - name: "ForceUpdateLayout"
+              ref: "/Utils/UIUtils/ForceUpdateLayout"

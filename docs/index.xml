@@ -43,6 +43,18 @@ WithWhat.Utils
     </item>
     
     <item>
+      <title>ForceUpdateLayout()</title>
+      <link>https://yongshen.me/WithWhatForUnity/Utils/UIUtils/ForceUpdateLayout/</link>
+      <pubDate>Wed, 24 Nov 2021 15:50:26 +0800</pubDate>
+      
+      <guid>https://yongshen.me/WithWhatForUnity/Utils/UIUtils/ForceUpdateLayout/</guid>
+      <description>Github Gitee
+WithWhat.Utils
+描述    强制刷新UI布局
+参数       参数名 类型 描述     rect RectTransform 带有Layout的RectTransform    </description>
+    </item>
+    
+    <item>
       <title>StringToVector3()</title>
       <link>https://yongshen.me/WithWhatForUnity/Utils/Vector3Utils/StringToVector3/</link>
       <pubDate>Wed, 24 Nov 2021 15:50:26 +0800</pubDate>

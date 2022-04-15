@@ -1,6 +1,6 @@
 ### 生成静态html
 ```Shell
-hugo -d docs
+hugo -d ../docs
 ```
 
 ### 项目启动
