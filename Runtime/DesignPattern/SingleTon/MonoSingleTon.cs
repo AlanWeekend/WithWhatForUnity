@@ -24,15 +24,11 @@ namespace WithWhat.DesignPattern
                     if (instance == null)
                     {
                         var instanceName = typeof(T).Name;
-                        Debug.LogFormat("Instance Name: {0}", instanceName);
                         var instanceObj = GameObject.Find(instanceName);
                         if (!instanceObj)
                             instanceObj = new GameObject(instanceName);
                         instance = instanceObj.AddComponent<T>();
                         DontDestroyOnLoad(instanceObj); //保证实例例不不会被释放
-
-                        Debug.LogFormat("Add New Singleton {0} in Game!",
-                        instanceName);
                     }
                     else
                     {
