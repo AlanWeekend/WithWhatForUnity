@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HTTP请求 on 用什么？这里或许能找到答案...</title>
+    <link>https://yongshen.me/WithWhatForUnity/Net/WebRequestMgr/</link>
+    <description>Recent content in HTTP请求 on 用什么？这里或许能找到答案...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 23 Nov 2021 12:01:14 +0800</lastBuildDate><atom:link href="https://yongshen.me/WithWhatForUnity/Net/WebRequestMgr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>StartPostRequestByJson()</title>
+      <link>https://yongshen.me/WithWhatForUnity/Net/WebRequestMgr/StartPostRequestByJson/</link>
+      <pubDate>Tue, 23 Nov 2021 12:01:14 +0800</pubDate>
+      
+      <guid>https://yongshen.me/WithWhatForUnity/Net/WebRequestMgr/StartPostRequestByJson/</guid>
+      <description>Github Gitee
+WithWhat.Net.Http
+描述    Post请求，通过json传参
+参数       参数名 类型 描述     url string 请求地址,不包含域名   postData string Json数据   resultFunc Action&amp;lt;bool, string&amp;gt; 请求完成后的回调,参数1:是否请求成功,参数2:成功时是json,失败时是错误提示   header Dictionary&amp;lt;string, string&amp;gt; 请求头（可选）    用法：    using UnityEngine; using WithWhat.Net.Http; using Newtonsoft.Json; public class PostByJsonTest : MonoBehaviour { class Payload { public string url; public string type; } private void Awake() { WebRequestMgr.</description>
+    </item>
+    
+    <item>
+      <title>StartPostRequest()</title>
+      <link>https://yongshen.me/WithWhatForUnity/Net/WebRequestMgr/StartPostRequest/</link>
+      <pubDate>Tue, 23 Nov 2021 11:54:30 +0800</pubDate>
+      
+      <guid>https://yongshen.me/WithWhatForUnity/Net/WebRequestMgr/StartPostRequest/</guid>
+      <description>Github Gitee
+WithWhat.Net.Http
+描述    Post请求
+参数       参数名 类型 描述     url string 请求地址,不包含域名   postData WWWForm 表单   resultFunc Action&amp;lt;bool, string&amp;gt; 请求完成后的回调,参数1:是否请求成功,参数2:成功时是json,失败时是错误提示   header Dictionary&amp;lt;string, string&amp;gt; 请求头（可选）    用法：    using UnityEngine; using WithWhat.Net.Http; public class PostTest : MonoBehaviour { private void Awake() { WebRequestMgr.Instance.Domain = &amp;#34;https://api.muxiaoguo.cn/api/&amp;#34;; } void Start() { var requestData = new WWWForm(); requestData.</description>
+    </item>
+    
+    <item>
+      <title>Domain</title>
+      <link>https://yongshen.me/WithWhatForUnity/Net/WebRequestMgr/Domain/</link>
+      <pubDate>Fri, 19 Nov 2021 17:12:03 +0800</pubDate>
+      
+      <guid>https://yongshen.me/WithWhatForUnity/Net/WebRequestMgr/Domain/</guid>
+      <description>Github Gitee
+WithWhat.Net.Http
+描述    设置Http请求的基础域名，必须设置
+用法    using UnityEngine; using WithWhat.Net.Http; public class DomainTest : MonoBehaviour { private void Awake() { WebRequestMgr.Instance.Domain = &amp;#34;https://api.muxiaoguo.cn/api/chePhone/&amp;#34;; } } </description>
+    </item>
+    
+    <item>
+      <title>StartGetRequest()</title>
+      <link>https://yongshen.me/WithWhatForUnity/Net/WebRequestMgr/StartGetRequest/</link>
+      <pubDate>Fri, 19 Nov 2021 17:12:03 +0800</pubDate>
+      
+      <guid>https://yongshen.me/WithWhatForUnity/Net/WebRequestMgr/StartGetRequest/</guid>
+      <description>Github Gitee
+WithWhat.Net.Http
+描述    Get请求
+参数       参数名 类型 描述     url string 请求地址,不包含域名   resultFunc Action&amp;lt;bool, string&amp;gt; 请求完成后的回调,参数1:是否请求成功,参数2:成功时是json,失败时是错误提示   header Dictionary&amp;lt;string, string&amp;gt; 请求头（可选）    用法：    using UnityEngine; using WithWhat.Net.Http; public class GetTest : MonoBehaviour { private void Awake() { WebRequestMgr.Instance.Domain = &amp;#34;https://api.muxiaoguo.cn/api/&amp;#34;; } void Start() { WebRequestMgr.Instance.StartGetRequest(&amp;#34;chePhone?phoneNum=13786310544&amp;#34;, (success, message) =&amp;gt; { if (success) { print(message); } }); } } </description>
+    </item>
+    
+  </channel>
+</rss>

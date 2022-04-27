@@ -212,10 +212,10 @@ WithWhat.DesignPattern
     
     <item>
       <title>StartPostRequestByJson()</title>
-      <link>https://yongshen.me/WithWhatForUnity/WebRequestMgr/StartPostRequestByJson/</link>
+      <link>https://yongshen.me/WithWhatForUnity/Net/WebRequestMgr/StartPostRequestByJson/</link>
       <pubDate>Tue, 23 Nov 2021 12:01:14 +0800</pubDate>
       
-      <guid>https://yongshen.me/WithWhatForUnity/WebRequestMgr/StartPostRequestByJson/</guid>
+      <guid>https://yongshen.me/WithWhatForUnity/Net/WebRequestMgr/StartPostRequestByJson/</guid>
       <description>Github Gitee
 WithWhat.Net.Http
 描述    Post请求，通过json传参
@@ -224,10 +224,10 @@ WithWhat.Net.Http
     
     <item>
       <title>StartPostRequest()</title>
-      <link>https://yongshen.me/WithWhatForUnity/WebRequestMgr/StartPostRequest/</link>
+      <link>https://yongshen.me/WithWhatForUnity/Net/WebRequestMgr/StartPostRequest/</link>
       <pubDate>Tue, 23 Nov 2021 11:54:30 +0800</pubDate>
       
-      <guid>https://yongshen.me/WithWhatForUnity/WebRequestMgr/StartPostRequest/</guid>
+      <guid>https://yongshen.me/WithWhatForUnity/Net/WebRequestMgr/StartPostRequest/</guid>
       <description>Github Gitee
 WithWhat.Net.Http
 描述    Post请求
@@ -332,10 +332,10 @@ WithWhat.ClassExtision
     
     <item>
       <title>Domain</title>
-      <link>https://yongshen.me/WithWhatForUnity/WebRequestMgr/Domain/</link>
+      <link>https://yongshen.me/WithWhatForUnity/Net/WebRequestMgr/Domain/</link>
       <pubDate>Fri, 19 Nov 2021 17:12:03 +0800</pubDate>
       
-      <guid>https://yongshen.me/WithWhatForUnity/WebRequestMgr/Domain/</guid>
+      <guid>https://yongshen.me/WithWhatForUnity/Net/WebRequestMgr/Domain/</guid>
       <description>Github Gitee
 WithWhat.Net.Http
 描述    设置Http请求的基础域名，必须设置
@@ -344,10 +344,10 @@ WithWhat.Net.Http
     
     <item>
       <title>StartGetRequest()</title>
-      <link>https://yongshen.me/WithWhatForUnity/WebRequestMgr/StartGetRequest/</link>
+      <link>https://yongshen.me/WithWhatForUnity/Net/WebRequestMgr/StartGetRequest/</link>
       <pubDate>Fri, 19 Nov 2021 17:12:03 +0800</pubDate>
       
-      <guid>https://yongshen.me/WithWhatForUnity/WebRequestMgr/StartGetRequest/</guid>
+      <guid>https://yongshen.me/WithWhatForUnity/Net/WebRequestMgr/StartGetRequest/</guid>
       <description>Github Gitee
 WithWhat.Net.Http
 描述    Get请求

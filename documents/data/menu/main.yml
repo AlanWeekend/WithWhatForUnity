@@ -67,17 +67,22 @@ main:
             ref: "/DesignPattern/Repository/FileSystemRepository"
   - name: 有限状态机
     ref: "/FSM"
-  - name: HTTP请求
-    ref: "/WebRequestMgr"
+  - name: 网络模块
+    ref: "/Net"
     sub:
-        - name: "Domain"
-          ref: "/WebRequestMgr/Domain"
-        - name: "StartGetRequest"
-          ref: "/WebRequestMgr/StartGetRequest"
-        - name: "StartPostRequest"
-          ref: "/WebRequestMgr/StartPostRequest"
-        - name: "StartPostRequestByJson"
-          ref: "/WebRequestMgr/StartPostRequestByJson"
+      - name: Http
+        ref: "/Net/WebRequestMgr"
+        sub:
+          - name: "Domain"
+            ref: "/Net/WebRequestMgr/Domain"
+          - name: "StartGetRequest"
+            ref: "/Net/WebRequestMgr/StartGetRequest"
+          - name: "StartPostRequest"
+            ref: "/Net/WebRequestMgr/StartPostRequest"
+          - name: "StartPostRequestByJson"
+            ref: "/Net/WebRequestMgr/StartPostRequestByJson"
+      - name: SignalR
+        ref: "/Net/SignalRClient"
   - name: 工具类
     ref: "/Utils"
     sub:
