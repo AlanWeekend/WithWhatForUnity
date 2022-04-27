@@ -13,7 +13,7 @@
     <meta name="description" content="Github Gitee
 WithWhat.Net.SignalR
 描述    SignalR客户端，仅支持.NET4.X。.NET Standard 2.0需要自行替换Runtime\Net\SignalR\Plugins中的DLL。
-用法：    using UnityEngine; using WithWhat.ClassExtision; public class Test : MonoBehaviour { enum UIEnum { Login, Register, } void Start() { print(typeof(UIEnum).GetEnumNamesList()); } } ">
+用法：    using Microsoft.AspNetCore.SignalR.Client; using UnityEngine; using WithWhat.Net.SignalR; public class SignalRHelper : MonoBehaviour { private string msg; private void Awake() { // 初始化客户端  SignalRClient.Instance.InitClient(&#34;http://10.100.100.116:8081/chathub&#34;); // 注册连接成功回调  SignalRClient.Instance.OnConnected &#43;= OnConnected; // 注册连接失败回调  SignalRClient.Instance.OnDisConnected &#43;= OnDisConnected; // 注册重连回调  SignalRClient.Instance.OnReconnecting &#43;= OnReconnecting; } private void Start() { // 连接服务器  SignalRClient.Instance.ConnectToServer(); // 注册远程回调（接收消息）  SignalRClient.Instance.Connection.On&lt;string, string, string&gt;(&#34;ReceiveMessage&#34;, (message, user, type) =&gt; { msg &#43;= $&#34;{message} {user} {type}\r\n&#34;; Debug.">
 
 
 
@@ -2105,21 +2105,59 @@ WithWhat.Net.SignalR
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>
-</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="k">using</span> <span class="nn">UnityEngine</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">WithWhat.ClassExtision</span><span class="p">;</span>
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="k">using</span> <span class="nn">Microsoft.AspNetCore.SignalR.Client</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">UnityEngine</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">WithWhat.Net.SignalR</span><span class="p">;</span>
 
-<span class="k">public</span> <span class="k">class</span> <span class="nc">Test</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+<span class="k">public</span> <span class="k">class</span> <span class="nc">SignalRHelper</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
 <span class="p">{</span>
+    <span class="k">private</span> <span class="kt">string</span> <span class="n">msg</span><span class="p">;</span>
 
-    <span class="k">enum</span> <span class="n">UIEnum</span>
+    <span class="k">private</span> <span class="k">void</span> <span class="n">Awake</span><span class="p">()</span>
     <span class="p">{</span>
-        <span class="n">Login</span><span class="p">,</span>
-        <span class="n">Register</span><span class="p">,</span>
+        <span class="c1">// 初始化客户端
+</span><span class="c1"></span>        <span class="n">SignalRClient</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">InitClient</span><span class="p">(</span><span class="s">&#34;http://10.100.100.116:8081/chathub&#34;</span><span class="p">);</span>
+        <span class="c1">// 注册连接成功回调
+</span><span class="c1"></span>        <span class="n">SignalRClient</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">OnConnected</span> <span class="p">+=</span> <span class="n">OnConnected</span><span class="p">;</span>
+        <span class="c1">// 注册连接失败回调
+</span><span class="c1"></span>        <span class="n">SignalRClient</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">OnDisConnected</span> <span class="p">+=</span> <span class="n">OnDisConnected</span><span class="p">;</span>
+        <span class="c1">// 注册重连回调
+</span><span class="c1"></span>        <span class="n">SignalRClient</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">OnReconnecting</span> <span class="p">+=</span> <span class="n">OnReconnecting</span><span class="p">;</span>
     <span class="p">}</span>
 
-    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="k">private</span> <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
     <span class="p">{</span>
-        <span class="n">print</span><span class="p">(</span><span class="k">typeof</span><span class="p">(</span><span class="n">UIEnum</span><span class="p">).</span><span class="n">GetEnumNamesList</span><span class="p">());</span>
+        <span class="c1">// 连接服务器
+</span><span class="c1"></span>        <span class="n">SignalRClient</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">ConnectToServer</span><span class="p">();</span>
+        <span class="c1">// 注册远程回调（接收消息）
+</span><span class="c1"></span>        <span class="n">SignalRClient</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">Connection</span><span class="p">.</span><span class="n">On</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;(</span><span class="s">&#34;ReceiveMessage&#34;</span><span class="p">,</span> <span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">user</span><span class="p">,</span> <span class="n">type</span><span class="p">)</span> <span class="p">=&gt;</span>
+        <span class="p">{</span>
+            <span class="n">msg</span> <span class="p">+=</span> <span class="s">$&#34;{message} {user} {type}\r\n&#34;</span><span class="p">;</span>
+            <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">$&#34;{message} {user} {type}&#34;</span><span class="p">);</span>
+        <span class="p">});</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="k">void</span> <span class="n">OnGUI</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">GUI</span><span class="p">.</span><span class="n">Label</span><span class="p">(</span><span class="k">new</span> <span class="n">Rect</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">300</span><span class="p">,</span> <span class="m">1000</span><span class="p">),</span> <span class="n">msg</span><span class="p">,</span><span class="k">new</span> <span class="n">GUIStyle</span><span class="p">()</span> <span class="p">{</span> <span class="n">fontSize</span><span class="p">=</span><span class="m">20</span><span class="p">,</span><span class="n">fontStyle</span><span class="p">=</span><span class="n">FontStyle</span><span class="p">.</span><span class="n">Bold</span><span class="p">});</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="k">void</span> <span class="n">OnReconnecting</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">print</span><span class="p">(</span><span class="s">&#34;重新连接&#34;</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="k">void</span> <span class="n">OnConnected</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">print</span><span class="p">(</span><span class="s">&#34;已连接服务器&#34;</span><span class="p">);</span>
+        <span class="n">msg</span> <span class="p">+=</span> <span class="s">&#34;已连接服务器\r\n&#34;</span><span class="p">;</span>
+        <span class="c1">// 调用远程方法
+</span><span class="c1"></span>        <span class="n">SignalRClient</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">InvokeAsync</span><span class="p">(</span><span class="s">&#34;AddToGroup&#34;</span><span class="p">,</span> <span class="s">&#34;topic-2&#34;</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="k">void</span> <span class="n">OnDisConnected</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">print</span><span class="p">(</span><span class="s">&#34;已断开连接&#34;</span><span class="p">);</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
