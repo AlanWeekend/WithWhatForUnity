@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Example/Utils/ExportScene/New Scene.unity
-    guid: 2f18318a17bf41042a5a9fd4078b4258
+    path: Assets/Example/Net/SignalR/SignalRDemo.unity
+    guid: a8c6cdaeab7e33a4188fffecc26bc0b6
   m_configObjects: {}
