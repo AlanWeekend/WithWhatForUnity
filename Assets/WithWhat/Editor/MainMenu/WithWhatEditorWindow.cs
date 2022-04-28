@@ -6,13 +6,14 @@ namespace WithWhat.Editor
     public class WithWhatEditorWindow : EditorWindow
     {
         #region 数据成员
-        private string[] tabNames = new string[] { "批量替换材质球", "场景导出","批量改名" };
+        private string[] tabNames = new string[] { "批量替换材质球", "场景导出","批量改名","其他选项" };
         private int selectedTabID;
         public static int FONTSIZE = 18;
 
         private EditorWindowBatchReplaceMaterials _batchReplaceMaterials;
         private EditorWindowExportScene _editorWindowExportScene;
         private EditorWindowBatchUpdateGameObjectName _batchUpdateGameObjectName;
+        private EditorWindowOtherOptions _otherOptions;
         #endregion
 
         #region 编辑器入口
@@ -31,6 +32,7 @@ namespace WithWhat.Editor
             _batchReplaceMaterials = ScriptableObject.CreateInstance<EditorWindowBatchReplaceMaterials>();
             _editorWindowExportScene = ScriptableObject.CreateInstance<EditorWindowExportScene>();
             _batchUpdateGameObjectName = ScriptableObject.CreateInstance<EditorWindowBatchUpdateGameObjectName>();
+            _otherOptions = ScriptableObject.CreateInstance<EditorWindowOtherOptions>();
         }
         #endregion
 
@@ -70,6 +72,9 @@ namespace WithWhat.Editor
                     break;
                 case 2:
                     _batchUpdateGameObjectName.DrawGUI();
+                    break;
+                case 3:
+                    _otherOptions.DrawGUI();
                     break;
                 default:
                     break;

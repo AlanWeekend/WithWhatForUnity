@@ -603,7 +603,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: "<a href = \"https://www.baidu.com\">\u767E\u5EA6</a>"
 --- !u!222 &842780814
 CanvasRenderer:
   m_ObjectHideFlags: 0
