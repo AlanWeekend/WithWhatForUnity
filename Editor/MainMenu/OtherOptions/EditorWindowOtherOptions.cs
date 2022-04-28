@@ -67,7 +67,7 @@ namespace WithWhat.Editor
                 {
                     if (dir.Contains("@"))
                     {
-                        if (dir.Split('@')[0].Equals(packageName))
+                        if (dir.Split('@')[0].EndsWith(packageName))
                         {
                             packageDirectoryName = dir;
                             break;
