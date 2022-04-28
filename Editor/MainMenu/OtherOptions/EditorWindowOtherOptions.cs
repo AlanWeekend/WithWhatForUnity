@@ -41,7 +41,8 @@ namespace WithWhat.Editor
         /// <summary>
         /// 脚本路径
         /// </summary>
-        private string scriptFullPath;
+        private string scriptSourceFullPath;
+        private string scriptDstFullPath;
         /// <summary>
         /// 是否打开
         /// </summary>
@@ -52,11 +53,13 @@ namespace WithWhat.Editor
         private void Awake()
         {
             scriptFullPathInProject = $"{projectPath}\\Assets\\WithWhat{scriptPath}";
+            scriptDstFullPath = $"{projectPath}\\Assets\\Plugins\\SignalR";
+            Debug.Log(scriptDstFullPath);
 
             // 在插件项目中运行
             if (Directory.Exists(scriptFullPathInProject))
             {
-                scriptFullPath = scriptFullPathInProject;
+                scriptSourceFullPath = scriptFullPathInProject;
             }
             // 在Package中运行
             else
@@ -81,10 +84,10 @@ namespace WithWhat.Editor
                     return;
                 }
 
-                scriptFullPath = $"{projectPath}{pluginsPath}\\{packageDirectoryName}{scriptPath}";
+                scriptSourceFullPath = $"{projectPath}{pluginsPath}\\{packageDirectoryName}{scriptPath}";
             }
 
-            isStart = File.Exists($"{scriptFullPath}\\{scriptName}.cs");
+            isStart = File.Exists($"{scriptDstFullPath}\\{scriptName}.cs");
             isToggle = isStart;
         }
 
@@ -99,12 +102,16 @@ namespace WithWhat.Editor
                 // 打开
                 if (isToggle)
                 {
-                    File.Move($"{scriptFullPath}\\{scriptName}.txt", $"{scriptFullPath}\\{scriptName}.cs");
+                    if (!File.Exists(scriptDstFullPath))
+                    {
+                        Directory.CreateDirectory(scriptDstFullPath);
+                    }
+                    File.Copy($"{scriptSourceFullPath}\\{scriptName}.txt", $"{scriptDstFullPath}\\{scriptName}.cs");
                 }
                 // 关闭
                 else
                 {
-                    File.Move($"{scriptFullPath}\\{scriptName}.cs", $"{scriptFullPath}\\{scriptName}.txt");
+                    File.Delete($"{scriptDstFullPath}\\{scriptName}.cs");
                 }
                 isStart = isToggle;
                 AssetDatabase.Refresh();
