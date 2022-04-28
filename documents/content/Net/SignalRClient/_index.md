@@ -9,9 +9,13 @@ draft: false
 
 WithWhat.Net.SignalR
 ## 描述
-SignalR客户端，仅支持``.NET4.X``。``.NET Standard 2.0``需要自行替换``Runtime\Net\SignalR\Plugins``中的DLL。
+SignalR客户端，基于``Microsoft.AspNetCore.SignalR.Client``。
+
+默认不启用，使用请在``WithWhat-其他选项-SignalRClient``勾选启用。
+
+启用前请先将``Microsoft.AspNetCore.SignalR.Client.DLL``及其依赖添加到项目中。
 ## 依赖文件
-若发生冲突，可手动删除``\Runtime\Net\SignalR\Plugins``中的DLL。
+整理好的依赖文件如下，放到Plugins中可以直接用。如果和你项目中的其他DLL冲突，请自行替换。
 
 [.Net 4.x](/WithWhatForUnity/files/dependencis/SignalR_Net4x.zip)
 
