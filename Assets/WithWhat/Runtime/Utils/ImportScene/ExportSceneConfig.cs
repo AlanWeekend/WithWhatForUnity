@@ -1,7 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace WithWhat.Utils.ImportScene
 {
+    [Serializable]
     public class ExportSceneConfig
     {
         public string GameObjectName;
@@ -13,6 +15,7 @@ namespace WithWhat.Utils.ImportScene
         public List<ExportSceneConfig> Childs;
     }
 
+    [Serializable]
     public class ExportSceneConfigTransform
     {
         public string Position;
@@ -20,24 +23,28 @@ namespace WithWhat.Utils.ImportScene
         public string Scale;
     }
 
+    [Serializable]
     public class ExportSceneConfigTrigger
     {
         public string TriggerName;
         public string Data;
     }
 
+    [Serializable]
     public class ExportSceneConfigTriggerBox
     {
         public string Center;
         public string Size;
     }
 
+    [Serializable]
     public class ExportSceneConfigTriggerSphere
     {
         public string Center;
         public float Radius;
     }
 
+    [Serializable]
     public class ExportSceneConfigTriggerCapsule
     {
         public string Center;

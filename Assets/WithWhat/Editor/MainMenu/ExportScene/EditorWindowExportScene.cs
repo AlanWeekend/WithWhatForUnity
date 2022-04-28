@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using UnityEditor;
@@ -66,7 +65,7 @@ namespace WithWhat.Editor
                 if (File.Exists(_configColletPath))
                 {
                     var colletTxt = File.ReadAllText(_configColletPath);
-                    _configCollect = JsonConvert.DeserializeObject<ExportSceneConfigCollect>(colletTxt);
+                    _configCollect = JsonUtility.FromJson<ExportSceneConfigCollect>(colletTxt);
                 }
 
                 // 保存Config路径
@@ -109,7 +108,7 @@ namespace WithWhat.Editor
                 }
                 // 生成场景配置文件
                 var editorSceneConfig = Generate(_targetGo.transform, _isRelative);
-                File.WriteAllText(Path.Combine(_configPath,$"{_targetGo.name}.json"), JsonConvert.SerializeObject(editorSceneConfig), Encoding.UTF8);
+                File.WriteAllText(Path.Combine(_configPath,$"{_targetGo.name}.json"), JsonUtility.ToJson(editorSceneConfig), Encoding.UTF8);
                 
                 // 生成收集配置文件
                 if (_configCollect == null)
@@ -124,7 +123,7 @@ namespace WithWhat.Editor
                 {
                     _configCollect.Configs.Add(_targetGo.name);
                 }
-                File.WriteAllText(_configColletPath, JsonConvert.SerializeObject(_configCollect), Encoding.UTF8);
+                File.WriteAllText(_configColletPath, JsonUtility.ToJson(_configCollect), Encoding.UTF8);
 
                 EditorUtility.DisplayDialog("提示", "配置文件生成完毕", "确定");
                 AssetDatabase.Refresh();
@@ -242,7 +241,7 @@ namespace WithWhat.Editor
                         Center = boxCollider.center.ToString("F5"),
                         Size = boxCollider.size.ToString("F5")
                     };
-                    editorSceneConfigTrigger.Data = JsonConvert.SerializeObject(boxtriggerData);
+                    editorSceneConfigTrigger.Data = JsonUtility.ToJson(boxtriggerData);
                     break;
                 case nameof(CapsuleCollider):
                     var capsuleCollider = collider as CapsuleCollider;
@@ -253,7 +252,7 @@ namespace WithWhat.Editor
                         Height = capsuleCollider.height,
                         Direction = capsuleCollider.direction
                     };
-                    editorSceneConfigTrigger.Data = JsonConvert.SerializeObject(capsuleTriggerData);
+                    editorSceneConfigTrigger.Data = JsonUtility.ToJson(capsuleTriggerData);
                     break;
                 case nameof(SphereCollider):
                     var sphereCollider = collider as SphereCollider;
@@ -262,7 +261,7 @@ namespace WithWhat.Editor
                         Center = sphereCollider.center.ToString("F5"),
                         Radius = sphereCollider.radius
                     };
-                    editorSceneConfigTrigger.Data = JsonConvert.SerializeObject(sphereTriggerData);
+                    editorSceneConfigTrigger.Data = JsonUtility.ToJson(sphereTriggerData);
                     break;
             }
             return editorSceneConfigTrigger;
@@ -289,7 +288,7 @@ namespace WithWhat.Editor
                 EditorUtility.DisplayDialog("提示", "Collect文件为空，已跳过清理步骤", "确定");
                 return;
             }
-            var configCollect = JsonConvert.DeserializeObject<ExportSceneConfigCollect>(collectTxt);
+            var configCollect = JsonUtility.FromJson<ExportSceneConfigCollect>(collectTxt);
             if (configCollect.Configs == null)
             {
                 EditorUtility.DisplayDialog("提示", "Collect文件中不包含任何配置项，已跳过清理步骤", "确定");
@@ -310,7 +309,7 @@ namespace WithWhat.Editor
                 {
                     continue;
                 }
-                var config = JsonConvert.DeserializeObject<ExportSceneConfig>(configTxt);
+                var config = JsonUtility.FromJson<ExportSceneConfig>(configTxt);
                 GetAllPrefabPath(config, prefabNames);
             }
 

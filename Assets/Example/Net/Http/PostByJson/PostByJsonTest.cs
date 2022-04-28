@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using WithWhat.Net.Http;
-using Newtonsoft.Json;
 
 public class PostByJsonTest : MonoBehaviour
 {
@@ -18,7 +17,7 @@ public class PostByJsonTest : MonoBehaviour
     void Start()
     {
         var payload = new Payload() { url = "qq.com",type= "Cz" };
-        WebRequestMgr.Instance.StartPostRequestByJson("ICP", JsonConvert.SerializeObject(payload), (success, message) =>
+        WebRequestMgr.Instance.StartPostRequestByJson("ICP", JsonUtility.ToJson(payload), (success, message) =>
         {
             if (success)
             {

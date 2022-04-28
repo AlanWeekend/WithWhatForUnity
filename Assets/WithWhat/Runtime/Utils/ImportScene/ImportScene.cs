@@ -1,4 +1,3 @@
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -197,7 +196,7 @@ namespace WithWhat.Utils.ImportScene
                 Debug.LogErrorFormat($"要导入的场景 {SceneName} 不存在");
                 return null;
             }
-            return JsonConvert.DeserializeObject<ExportSceneConfig>(configTxt.text);
+            return JsonUtility.FromJson<ExportSceneConfig>(configTxt.text);
         }
 
         /// <summary>
@@ -491,13 +490,13 @@ namespace WithWhat.Utils.ImportScene
             switch (sceneConfigTrigger.TriggerName)
             {
                 case nameof(BoxCollider):
-                    var boxColliderConfig = JsonConvert.DeserializeObject<ExportSceneConfigTriggerBox>(sceneConfigTrigger.Data);
+                    var boxColliderConfig = JsonUtility.FromJson<ExportSceneConfigTriggerBox>(sceneConfigTrigger.Data);
                     var boxCollider = go.AddComponent<BoxCollider>();
                     boxCollider.center = Vector3Utils.StringToVector3(boxColliderConfig.Center);
                     boxCollider.size = Vector3Utils.StringToVector3(boxColliderConfig.Size);
                     return boxCollider;
                 case nameof(CapsuleCollider):
-                    var capsuleColliderConfig = JsonConvert.DeserializeObject<ExportSceneConfigTriggerCapsule>(sceneConfigTrigger.Data);
+                    var capsuleColliderConfig = JsonUtility.FromJson<ExportSceneConfigTriggerCapsule>(sceneConfigTrigger.Data);
                     var capsuleCollider = go.AddComponent<CapsuleCollider>();
                     capsuleCollider.center = Vector3Utils.StringToVector3(capsuleColliderConfig.Center);
                     capsuleCollider.radius = capsuleColliderConfig.Radius;
@@ -505,7 +504,7 @@ namespace WithWhat.Utils.ImportScene
                     capsuleCollider.direction = capsuleColliderConfig.Direction;
                     return capsuleCollider;
                 case nameof(SphereCollider):
-                    var sphereColliderConfig = JsonConvert.DeserializeObject<ExportSceneConfigTriggerSphere>(sceneConfigTrigger.Data);
+                    var sphereColliderConfig = JsonUtility.FromJson<ExportSceneConfigTriggerSphere>(sceneConfigTrigger.Data);
                     var sphereCollider = go.AddComponent<SphereCollider>();
                     sphereCollider.center = Vector3Utils.StringToVector3(sphereColliderConfig.Center);
                     sphereCollider.radius = sphereColliderConfig.Radius;

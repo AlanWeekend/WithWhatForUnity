@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using UnityEngine;
 
 namespace WithWhat.Infrastructure.Serializer
 {
@@ -8,12 +8,12 @@ namespace WithWhat.Infrastructure.Serializer
 
         public T Deserialize<T>(string str) where T : class, new()
         {
-            return JsonConvert.DeserializeObject<T>(str);
+            return JsonUtility.FromJson<T>(str);
         }
 
         public string Serialize<T>(T obj, bool readableOutput = false) where T : class, new()
         {
-            return JsonConvert.SerializeObject(obj);
+            return JsonUtility.ToJson(obj);
         }
     }
 }
