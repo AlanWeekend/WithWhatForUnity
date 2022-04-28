@@ -18,10 +18,6 @@ Window - PackgeManager - Add packge from git URL
 > [GitHub](https://github.com/AlanWeekend/WithWhatForUnity/tree/master/Assets/Example)
 [Gitee](https://gitee.com/week233/with_what_for_unity/tree/master/Assets/Example)
 
-### 依赖
-
-> jillejr.newtonsoft.json-for-unity
-
 | 模块 |
 | - |
 | [类拓展](/WithWhatForUnity/ClassExtision) |
