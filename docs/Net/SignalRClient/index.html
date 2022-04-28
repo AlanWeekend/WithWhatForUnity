@@ -13,7 +13,10 @@
     <meta name="description" content="Github Gitee
 WithWhat.Net.SignalR
 描述    SignalR客户端，仅支持.NET4.X。.NET Standard 2.0需要自行替换Runtime\Net\SignalR\Plugins中的DLL。
-用法：    using Microsoft.AspNetCore.SignalR.Client; using UnityEngine; using WithWhat.Net.SignalR; public class SignalRHelper : MonoBehaviour { private string msg; private void Awake() { // 初始化客户端  SignalRClient.Instance.InitClient(&#34;http://10.100.100.116:8081/chathub&#34;); // 注册连接成功回调  SignalRClient.Instance.OnConnected &#43;= OnConnected; // 注册连接失败回调  SignalRClient.Instance.OnDisConnected &#43;= OnDisConnected; // 注册重连回调  SignalRClient.Instance.OnReconnecting &#43;= OnReconnecting; } private void Start() { // 连接服务器  SignalRClient.Instance.ConnectToServer(); // 注册远程回调（接收消息）  SignalRClient.Instance.Connection.On&lt;string, string, string&gt;(&#34;ReceiveMessage&#34;, (message, user, type) =&gt; { msg &#43;= $&#34;{message} {user} {type}\r\n&#34;; Debug.">
+依赖文件    若发生冲突，可手动删除\Runtime\Net\SignalR\Plugins中的DLL。
+.Net 4.x
+.Net Standard 2.0(暂未整理)
+用法：    using Microsoft.AspNetCore.SignalR.Client; using UnityEngine; using WithWhat.Net.SignalR; public class SignalRHelper : MonoBehaviour { private string msg; private void Awake() { // 初始化客户端  SignalRClient.Instance.InitClient(&#34;http://10.100.100.116:8081/chathub&#34;); // 注册连接成功回调  SignalRClient.Instance.OnConnected &#43;= OnConnected; // 注册连接失败回调  SignalRClient.Instance.OnDisConnected &#43;= OnDisConnected; // 注册重连回调  SignalRClient.Instance.OnReconnecting &#43;= OnReconnecting; } private void Start() { // 连接服务器  SignalRClient.">
 
 
 
@@ -2098,6 +2101,16 @@ WithWhat.Net.SignalR
         </a>
     </h2>
 </div><p>SignalR客户端，仅支持<code>.NET4.X</code>。<code>.NET Standard 2.0</code>需要自行替换<code>Runtime\Net\SignalR\Plugins</code>中的DLL。</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="依赖文件">
+        依赖文件
+        <a data-clipboard-text="https://yongshen.me/WithWhatForUnity/Net/SignalRClient/#依赖文件" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 依赖文件" href="#%e4%be%9d%e8%b5%96%e6%96%87%e4%bb%b6">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div><p>若发生冲突，可手动删除<code>\Runtime\Net\SignalR\Plugins</code>中的DLL。</p>
+<p><a class="gdoc-markdown__link" href="/WithWhatForUnity/files/dependencis/SignalR_Net4x.zip">.Net 4.x</a></p>
+<p><a class="gdoc-markdown__link" href="">.Net Standard 2.0(暂未整理)</a></p>
 <div class="gdoc-page__anchorwrap">
     <h2 id="用法">
         用法：
