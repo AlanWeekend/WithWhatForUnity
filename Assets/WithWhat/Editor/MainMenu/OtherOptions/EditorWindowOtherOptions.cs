@@ -84,7 +84,7 @@ namespace WithWhat.Editor
                     return;
                 }
 
-                scriptSourceFullPath = $"{projectPath}{pluginsPath}\\{packageDirectoryName}{scriptPath}";
+                scriptSourceFullPath = $"{packageDirectoryName}{scriptPath}";
             }
 
             isStart = File.Exists($"{scriptDstFullPath}\\{scriptName}.cs");
