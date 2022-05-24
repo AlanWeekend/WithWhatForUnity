@@ -12,8 +12,11 @@
 
     <meta name="description" content="Github Gitee
 WithWhat.Net.SignalR
-描述    SignalR客户端，仅支持.NET4.X。.NET Standard 2.0需要自行替换Runtime\Net\SignalR\Plugins中的DLL。
-依赖文件    若发生冲突，可手动删除\Runtime\Net\SignalR\Plugins中的DLL。
+描述    SignalR客户端，基于Microsoft.AspNetCore.SignalR.Client。
+默认不启用，使用请在WithWhat-其他选项-SignalRClient勾选启用。
+启用前请先将Microsoft.AspNetCore.SignalR.Client.DLL及其依赖添加到项目中。
+ 若在项目中使用了其他Nuget包，建议在Player Setting中关闭Assembly Version Validation
+ 依赖文件    整理好的依赖文件如下，放到Plugins中可以直接用。如果和你项目中的其他DLL冲突，请自行替换。
 .Net 4.x
 .Net Standard 2.0(暂未整理)
 用法：    using Microsoft.AspNetCore.SignalR.Client; using UnityEngine; using WithWhat.Net.SignalR; public class SignalRHelper : MonoBehaviour { private string msg; private void Awake() { // 初始化客户端  SignalRClient.Instance.InitClient(&#34;http://10.100.100.116:8081/chathub&#34;); // 注册连接成功回调  SignalRClient.Instance.OnConnected &#43;= OnConnected; // 注册连接失败回调  SignalRClient.Instance.OnDisConnected &#43;= OnDisConnected; // 注册重连回调  SignalRClient.Instance.OnReconnecting &#43;= OnReconnecting; } private void Start() { // 连接服务器  SignalRClient.">
@@ -2100,7 +2103,12 @@ WithWhat.Net.SignalR
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>
-</div><p>SignalR客户端，仅支持<code>.NET4.X</code>。<code>.NET Standard 2.0</code>需要自行替换<code>Runtime\Net\SignalR\Plugins</code>中的DLL。</p>
+</div><p>SignalR客户端，基于<code>Microsoft.AspNetCore.SignalR.Client</code>。</p>
+<p>默认不启用，使用请在<code>WithWhat</code>-<code>其他选项</code>-<code>SignalRClient</code>勾选启用。</p>
+<p>启用前请先将<code>Microsoft.AspNetCore.SignalR.Client.DLL</code>及其依赖添加到项目中。</p>
+<blockquote>
+<p>若在项目中使用了其他Nuget包，建议在<code>Player Setting</code>中关闭<code>Assembly Version Validation</code></p>
+</blockquote>
 <div class="gdoc-page__anchorwrap">
     <h2 id="依赖文件">
         依赖文件
@@ -2108,7 +2116,7 @@ WithWhat.Net.SignalR
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>
-</div><p>若发生冲突，可手动删除<code>\Runtime\Net\SignalR\Plugins</code>中的DLL。</p>
+</div><p>整理好的依赖文件如下，放到Plugins中可以直接用。如果和你项目中的其他DLL冲突，请自行替换。</p>
 <p><a class="gdoc-markdown__link" href="/WithWhatForUnity/files/dependencis/SignalR_Net4x.zip">.Net 4.x</a></p>
 <p><a class="gdoc-markdown__link" href="">.Net Standard 2.0(暂未整理)</a></p>
 <div class="gdoc-page__anchorwrap">
