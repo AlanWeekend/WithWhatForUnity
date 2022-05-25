@@ -11,9 +11,11 @@ WithWhat.Net.SignalR
 ## 描述
 SignalR客户端，基于``Microsoft.AspNetCore.SignalR.Client``。
 
-默认不启用，使用请在``WithWhat-其他选项-SignalRClient``勾选启用。
+默认不启用，使用请在``WithWhat``-``其他选项``-``SignalRClient``勾选启用。
 
 启用前请先将``Microsoft.AspNetCore.SignalR.Client.DLL``及其依赖添加到项目中。
+
+> 若在项目中使用了其他Nuget包，建议在``Player Setting``中关闭``Assembly Version Validation``
 ## 依赖文件
 整理好的依赖文件如下，放到Plugins中可以直接用。如果和你项目中的其他DLL冲突，请自行替换。
 
