@@ -220,9 +220,9 @@ namespace WithWhat.Utils.ImportScene
                 }
 
                 // 设置本地坐标
-                go.transform.localPosition = Vector3Utils.StringToVector3(exportSceneConfig.Local.Position);
-                go.transform.localEulerAngles = Vector3Utils.StringToVector3(exportSceneConfig.Local.Rotation);
-                go.transform.localScale = Vector3Utils.StringToVector3(exportSceneConfig.Local.Scale);
+                go.transform.localPosition = VectorUtils.StringToVector3(exportSceneConfig.Local.Position);
+                go.transform.localEulerAngles = VectorUtils.StringToVector3(exportSceneConfig.Local.Rotation);
+                go.transform.localScale = VectorUtils.StringToVector3(exportSceneConfig.Local.Scale);
 
                 // 添加触发器
                 if (exportSceneConfig.Triggers != null && exportSceneConfig.Triggers.Count > 0)
@@ -492,13 +492,13 @@ namespace WithWhat.Utils.ImportScene
                 case nameof(BoxCollider):
                     var boxColliderConfig = JsonUtility.FromJson<ExportSceneConfigTriggerBox>(sceneConfigTrigger.Data);
                     var boxCollider = go.AddComponent<BoxCollider>();
-                    boxCollider.center = Vector3Utils.StringToVector3(boxColliderConfig.Center);
-                    boxCollider.size = Vector3Utils.StringToVector3(boxColliderConfig.Size);
+                    boxCollider.center = VectorUtils.StringToVector3(boxColliderConfig.Center);
+                    boxCollider.size = VectorUtils.StringToVector3(boxColliderConfig.Size);
                     return boxCollider;
                 case nameof(CapsuleCollider):
                     var capsuleColliderConfig = JsonUtility.FromJson<ExportSceneConfigTriggerCapsule>(sceneConfigTrigger.Data);
                     var capsuleCollider = go.AddComponent<CapsuleCollider>();
-                    capsuleCollider.center = Vector3Utils.StringToVector3(capsuleColliderConfig.Center);
+                    capsuleCollider.center = VectorUtils.StringToVector3(capsuleColliderConfig.Center);
                     capsuleCollider.radius = capsuleColliderConfig.Radius;
                     capsuleCollider.height = capsuleColliderConfig.Height;
                     capsuleCollider.direction = capsuleColliderConfig.Direction;
@@ -506,7 +506,7 @@ namespace WithWhat.Utils.ImportScene
                 case nameof(SphereCollider):
                     var sphereColliderConfig = JsonUtility.FromJson<ExportSceneConfigTriggerSphere>(sceneConfigTrigger.Data);
                     var sphereCollider = go.AddComponent<SphereCollider>();
-                    sphereCollider.center = Vector3Utils.StringToVector3(sphereColliderConfig.Center);
+                    sphereCollider.center = VectorUtils.StringToVector3(sphereColliderConfig.Center);
                     sphereCollider.radius = sphereColliderConfig.Radius;
                     return sphereCollider;
                 default:
