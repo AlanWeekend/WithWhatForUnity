@@ -107,11 +107,13 @@ main:
                   ref: "/Utils/MathUtils/Random/GetRandomNumbers"
                 - name: "GetRandomType"
                   ref: "/Utils/MathUtils/Random/GetRandomType"
-        - name: "Vector3工具类"
-          ref: "/Utils/Vector3Utils"
+        - name: "Vector工具类"
+          ref: "/Utils/VectorUtils"
           sub:
             - name: "StringToVector3"
-              ref: "/Utils/Vector3Utils/StringToVector3"
+              ref: "/Utils/VectorUtils/StringToVector3"
+            - name: "StringToVector2"
+              ref: "/Utils/VectorUtils/StringToVector2"
         - name: "List类拓展"
           ref: "/Utils/ListUtils"
           sub:

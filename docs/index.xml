@@ -55,11 +55,23 @@ WithWhat.Utils
     </item>
     
     <item>
-      <title>StringToVector3()</title>
-      <link>https://yongshen.me/WithWhatForUnity/Utils/Vector3Utils/StringToVector3/</link>
+      <title>StringToVector2()</title>
+      <link>https://yongshen.me/WithWhatForUnity/Utils/VectorUtils/StringToVector2/</link>
       <pubDate>Wed, 24 Nov 2021 15:50:26 +0800</pubDate>
       
-      <guid>https://yongshen.me/WithWhatForUnity/Utils/Vector3Utils/StringToVector3/</guid>
+      <guid>https://yongshen.me/WithWhatForUnity/Utils/VectorUtils/StringToVector2/</guid>
+      <description>Github Gitee
+WithWhat.Utils
+描述    字符串转v2
+参数       参数名 类型 描述     position string 字符串 &amp;ldquo;(1,1)&amp;rdquo; 或 &amp;ldquo;1,1&amp;rdquo;    返回值       类型 描述     Vector2 转换结果，null或空字符串返回(0,0)    </description>
+    </item>
+    
+    <item>
+      <title>StringToVector3()</title>
+      <link>https://yongshen.me/WithWhatForUnity/Utils/VectorUtils/StringToVector3/</link>
+      <pubDate>Wed, 24 Nov 2021 15:50:26 +0800</pubDate>
+      
+      <guid>https://yongshen.me/WithWhatForUnity/Utils/VectorUtils/StringToVector3/</guid>
       <description>Github Gitee
 WithWhat.Utils
 描述    字符串转v3

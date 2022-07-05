@@ -4,8 +4,8 @@ date: 2021-11-24T15:50:26+08:00
 draft: false
 ---
 
-[Github](https://github.com/AlanWeekend/WithWhatForUnity/blob/upm/Runtime/Utils/Vector3Utils.cs#L12)
-[Gitee](https://gitee.com/week233/with_what_for_unity/blob/upm/Runtime/Utils/Vector3Utils.cs#L12)
+[Github](https://github.com/AlanWeekend/WithWhatForUnity/blob/upm/Runtime/Utils/VectorUtils.cs#L12)
+[Gitee](https://gitee.com/week233/with_what_for_unity/blob/upm/Runtime/Utils/VectorUtils.cs#L12)
 
 WithWhat.Utils
 ## 描述
